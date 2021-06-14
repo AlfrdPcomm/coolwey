@@ -1,0 +1,209 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#col1foo",
+      "flex-layout.col#col2foo",
+      "flex-layout.col#col3foo"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.col#col1foo":{
+    "title":"Columna 1 Footer",
+    "children":[
+      "vtex.menu@2.x:menu#col1",
+      "flex-layout.row#powered"
+    ],"props":{
+      "verticalAlign":"middle",
+      "width":"20%",
+      "blockClass": "colfooter"
+    }
+  },"flex-layout.row#powered":{
+    "title":"Row Poweredby",
+    "children":[
+      "image#pbvtex",
+      "image#pbpc"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "marginTop": 5,
+      "horizontalAlign":"left",
+      "blockClass":"rowpowered"
+    }
+  },"image#pbvtex":{
+    "props":{
+      "height":36,
+      "src":"assets/pbvtex.png"
+    }
+  },"image#pbpc":{
+    "props":{
+      "height":36,
+      "src":"assets/pbpc.png"
+    }
+  },
+  "flex-layout.col#col2foo":{
+    "title": "Columna 2 Footer",
+    "children":[
+      "image#logofoo"
+    ],"props":{
+      "horizontalAlign":"center",
+      "verticalAlign": "middle",
+      "width":"grow",
+      "blockClass":"colfooter"
+    }
+  },"image#logofoo":{
+    "title":"Logo Footer",
+    "props":{
+      "height":100,
+      "src":"assets/logocw.png"
+    }
+  },
+  
+  "flex-layout.col#col3foo":{
+    "title":"Columna 3 Footer",
+    "children":[
+      "vtex.menu@2.x:menu#col3",
+      "flex-layout.row#sm"
+    ],"props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "width":"20%",
+      "blockClass":"colfooter"
+    }
+  },"flex-layout.row#sm":{
+    "title":"Row Social Media",
+    "children":[
+      "flex-layout.col#image1",
+      "flex-layout.col#image2",
+      "flex-layout.col#image3"      
+    ],"props":{
+      "title":"Row Social Media",
+      "width":"100%",
+      "colGap":2,
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowsocialmedia",
+      "marginTop": 5
+    }
+  },"flex-layout.col#image1":{
+    "children":[
+      "image#tw"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#image2":{
+    "children":[
+      "image#ig"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#image3":{
+    "children":[
+      "image#fb"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "image#tw":{
+    "title":"Imagen Twitter",
+    "props":{
+      "height":33,
+      "src":"assets/tw.png"
+    }
+  },
+  "image#ig":{
+    "title":"Imagen Instagram",
+    "props":{
+      "height":33,
+      "src":"assets/ig.png"
+    }
+  },
+  "image#fb":{
+    "title":"Imagen Facebook",
+    "props":{
+      "height":33,
+      "src":"assets/fb.png"
+    }
+  },
+
+  
+
+
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.col#textofooter"
+      ],
+    "props": {
+      "blockClass": "credits",
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#textofooter":{
+    "children":[
+      "rich-text#footer"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "CoolWey México. Todos los derechos reservados © 2021",
+      "blockClass": "footer",
+      "textPosition":"center"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#col1foomobile",
+      "flex-layout.col#col3foomobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "preserveLayoutOnMobile":true
+    }
+  },"flex-layout.col#col1foomobile":{
+    "children":[
+      "vtex.menu@2.x:menu#col1",
+      "flex-layout.row#powered"
+
+    ]},"flex-layout.col#col3foomobile":{
+    "children":[
+      "vtex.menu@2.x:menu#col3",
+      "flex-layout.row#sm"
+    ]},
+  
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["flex-layout.col#col2foo"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}
