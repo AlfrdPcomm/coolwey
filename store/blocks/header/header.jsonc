@@ -71,8 +71,18 @@
       "flex-layout.col#spacer",
       "search-bar",
       "flex-layout.col#spacer",
+      "flex-layout.col#contactanos",
+      // "rich-text#contactanos-link",
       "login",
-      "minicart.v2"
+      // "flex-layout.col#account",
+      "flex-layout.col#wishlist",
+      "flex-layout.col#carrito"
+      // iconos de favoritos, mi cuenta y carrito
+      // "flex-layout.col#redirects-header"  
+      // "flex-layout.row#redirect-icons-header"
+      // // "image#wishlist-icon",
+      // // "menu-item#wishlist",
+      // "minicart.v2"
     ]
   },
   "flex-layout.col#logo-desktop": {
@@ -96,7 +106,10 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "flex-layout.row#2-desktop", 
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
     "children": [
@@ -106,29 +119,94 @@
   },
 
   "flex-layout.row#2-mobile":{
+    "props": {
+      "blockClass": "search-col-mobile"
+    },
     "children":[
       "search-bar"
     ]
   },
+    "search-bar": {
+      "blocks": ["autocomplete-result-list.v2"],
+      "props": {
+        "openAutocompleteOnFocus": true
+      }
+    },
+    "autocomplete-result-list.v2": {
+      "blocks": ["product-summary.shelf"]
+    },
+
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#drawer",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#account-wishlist-cart"
+      // "drawer",
+      // "logo#mobile",
+      // "flex-layout.col#spacer",
+      // "login",
+      // "flex-layout.col#account",
+      // "flex-layout.col#wishlist",
+      // "flex-layout.col#carrito"
+
+      // "minicart.v2"
     ],
     "props": {
       "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
+      // "preventHorizontalStretch": true,
+      // "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
+  },
+  // col drawer 
+  "flex-layout.col#drawer": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-drawer"
+      // "marginRight": 6
+    },
+    "children": [
+      "drawer"
+    ]
   },
   "drawer": {
     "children": ["menu#drawer"]
   },
-
+  // col logo 
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-logo"
+      // "marginRight": 6
+    },
+    "children": [
+      "logo#mobile"
+    ]
+  },
+  // col account, wishlist, cart
+  "flex-layout.col#account-wishlist-cart": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-account-wishlist-cart"
+      // "marginRight": 6
+    },
+    "children": [
+      "flex-layout.row#account-wishlist-cart"
+    ]
+  },
+  // row account, wishlist, cart 
+  "flex-layout.row#account-wishlist-cart": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": ""
+      // "marginRight": 6
+    },
+    "children": [
+      "login",
+      "flex-layout.col#wishlist",
+      "flex-layout.col#carrito"
+    ]
+  },
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -139,13 +217,126 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "assets/logocw.png",
-      "width": "70"
+      "width": "70",
+      "blockClass": "logo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "id": "menu-item-wishlist",
+      "type": "icon",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "iconId": "heart",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account/wishlist",
+        "noFollow": false,
+        "tagTitle": "Mi WishList",
+        "text": "favoritos"
+      }
+    }
+  },
+  // "image#wishlist-icon": {
+  //   "props": {
+  //     "src": "/arquivos/wishlist-icon.svg",
+  //     "maxHeight": 34,
+  //     "alt": "wishlist-link-icon",
+  //     "link": {"url": "/account#/wishlist"}
+  //   }
+  // },
+  // // "flex-layout.col#redirects-header": {
+  //   "props": {
+  //     "verticalAlign": "middle"
+  //   },
+  //   "children": [
+  //     "flex-layout.row#redirect-icons-header"
+  //   ]
+  // },
+  // "flex-layout.row#redirect-icons-header": {
+  //   "children": [
+  //     "flex-layout.col#contactanos",
+  //     "flex-layout.col#account",
+  //     "flex-layout.col#wishlist",
+  //     "flex-layout.col#carrito"
+  //   ],
+  //   "props": {
+  //     "fullWidth": true
+  //   }
+  // },
+  "flex-layout.col#contactanos": {
+    "props": {
+      "verticalAlign": "middle",
+      "marginRight": 9
+    },
+    "children": [
+      "rich-text#contactanos-link"
+    ]
+  },
+  "rich-text#contactanos-link": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[CONTÁCTANOS](/#contactanos)",
+      "blockClass": "contactanos-link"
+    }
+  },
+  "flex-layout.col#account": {
+    "props": {
+      "verticalAlign": "middle",
+      "marginRight": 6
+    },
+    "children": [
+      "image#account-icon"
+    ]
+  },
+  "image#account-icon": {
+      "props": {
+        "src": "/arquivos/account-icon.svg",
+        // "maxHeight": 20,
+        // "width": 20,
+        "alt": "account-link-icon",
+        "link": {"url": "/account"}
+    }
+  },
+  "flex-layout.col#wishlist": {
+    "props": {
+      "verticalAlign": "middle",
+      "marginRight": 5,
+      "blockClass": "col-wishlist"
+    },
+    "children": [
+      "image#wishlist-icon"
+    ]
+  },
+  "image#wishlist-icon": {
+      "props": {
+        "src": "/arquivos/wishlist-icon.svg",
+        // "maxHeight": 23,
+        // "width": 23,
+        "alt": "wishlist-link-icon",
+        "link": {"url": "/account#/wishlist"}
+    }
+  },
+  "flex-layout.col#carrito": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-carrito-icon",
+      "marginRight": 5
+    },
+    "children": [
+      "minicart.v2"
+    ]
   }
+  
+
 }
+// "text": "[Contáctanos](https://)"

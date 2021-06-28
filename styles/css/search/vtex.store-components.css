@@ -1,12 +1,27 @@
+/* global starts */
+:global(.vtex-toast) {
+  background-color: #ccff00;
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-toast) :global(.vtex-alert__close-icon) {
+  color: #252525;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
 .productBrandName--summaryListDesktop {
   text-decoration: none;
   font-weight: 500;
-  color: #0067C7;
-  font-size: .875rem;
+  color: #0067c7;
+  font-size: 0.875rem;
 }
 
 .productBrandName--summaryListMobile {
   text-decoration: none;
-  color: #0067C7;
-  font-size: .875rem;
+  color: #0067c7;
+  font-size: 0.875rem;
 }

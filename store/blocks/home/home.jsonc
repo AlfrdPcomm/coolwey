@@ -256,6 +256,7 @@
     }
   },
   // --------------------------- Fin Titulo Nuevos Producots ------------------------------
+
   // --------------------------- Inicio Row Info-cards ------------------------------------
 
   "flex-layout.row#info-cards":{
@@ -378,28 +379,37 @@
 
 
   // --------------------------- Fin Shelf Hot Sale -------------------------------
+
   // --------------------------- Inicio Row Marcas --------------------------------
 
   "flex-layout.row#marcas":{
     "title":"Row Slider Marcas",
     "children":[
       "slider-layout#marcas"
-    ],"props":{
+    ],
+    "props":{
       "marginTop":8,
-      "marginBottom": 8
+      "marginBottom": 8,
+      "blockClass": "marcas"
     }
-  },"slider-layout#marcas":{
+  },
+  "slider-layout#marcas":{
     "title": "Slider Marcas",
     "props":{
       "itemsPerPage": {
         "desktop": 7,
         "tablet": 5,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": true,
       "blockClass": "marcas",
-      "showPaginationDots":"desktopOnly"
+      "showPaginationDots":"desktopOnly",
+      "showNavigationArrows": "desktopOnly"
+      // "autoplay": {
+      //   "timeout": 2000,
+      //   "stopOnHover": true
+      // }
     },
     "children":[
       "image#marca1",
@@ -540,15 +550,18 @@
 
 
   // --------------------------- Fin info-card descuentos -----------------------------------
+
   // --------------------------- Inicio  Newsletter -----------------------------------------
   "flex-layout.row#news":{
     "title":"Row Newsletter",
     "children":[
       "flex-layout.col#contnews"
-    ],"props":{
+    ],
+    "props":{
       "horizontalAlign":"center",
       "marginTop":8,
-      "marginBottom":8
+      "marginBottom":8,
+      "blockClass": "newsLetter"
     }
   },
   "flex-layout.col#contnews":{
@@ -557,16 +570,19 @@
       "rich-text#titnews",
       "rich-text#textnews",
       "newsletter"
-    ],"props":{
+    ],
+    "props":{
       "horizontalAlign":"center"
     }
-  },"rich-text#titnews":{
+  },
+  "rich-text#titnews":{
     "title":"Titulo Newsletter",
     "props":{
       "text":"Suscríbete al Newsletter",
       "blockClass":"titnews"
     }
-  },"rich-text#textnews":{
+  },
+  "rich-text#textnews":{
     "title":"Texto Newsletter",
     "props":{
       "text":"Registrate y recibe un cupón de 10% de descuento, aplican restricciones",
@@ -604,9 +620,4 @@
       "blockClass": "shelf"
     }
   }
-
- 
-
- 
-
 }
