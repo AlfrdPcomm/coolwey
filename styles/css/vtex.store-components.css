@@ -1,0 +1,739 @@
+/* global style  */
+:global(.vtex-flex-layout-0-x-flexColChild) {
+  font-family: CenturyGothicRegular;
+}
+.notificationBarContainer {
+  background-color: #ccff00;
+  text-decoration: none;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+/* global ends */
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Home Starts */
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  position: absolute;
+  bottom: -25px;
+}
+:global(.vtex-slider-layout-0-x-paginationDot) {
+  background-color: #ccff00;
+  border: 2px solid #ccff00;
+}
+:global(.vtex-slider-layout-0-x-paginationDot--isActive) {
+  border: 2px solid #212165;
+}
+:global(.vtex-store-components-3-x-imageElement--imgcats) {
+  border-radius: 50%;
+  width: 218px;
+  height: 218px;
+}
+
+.items-stretch {
+  margin: 0;
+}
+:global(.vtex-slider-layout-0-x-slide--contenidosldcats)
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #0a0a0a;
+  font-family: CenturyGothicBold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+  margin-top: 0;
+}
+:global(.vtex-slider-layout-0-x-paginationDotsContainer--contenidosldcats) {
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedortitulo)
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 29px;
+  margin-top: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorinfos)
+  :global(.vtex-store-components-3-x-infoCardContainer) {
+  min-height: 440px;
+  /* opacity: 0.5; */
+  /* background-color: #000; */
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorinfos)
+  :global(.vtex-store-components-3-x-infoCardHeadline--rowic) {
+  color: #ffffff;
+  font-family: CenturyGothicBold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-infoCardTextContainer--rowic) {
+  width: 60%;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorinfos)
+  :global(.vtex-store-components-3-x-infoCardCallActionContainer)
+  :global(.vtex-button) {
+  border: 2px solid #ccff00;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colinfo) {
+  /* opacity: 0.7; */
+  /* background-color: #000; */
+}
+/* marcas start */
+
+:global(.vtex-flex-layout-0-x-flexRow--marcas)
+  :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+  background-color: #f6f6f6;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--marcas) {
+  padding: 10px 0;
+}
+/* marcas ends */
+/* full banenr footer starts */
+:global(.vtex-store-components-3-x-infoCardContainer--rowic) {
+  height: 440px;
+}
+:global(.vtex-store-components-3-x-infoCardContainer--rowic)
+  :global(.vtex-store-components-3-x-infoCardHeadline--rowic) {
+  color: #ffffff;
+  font-family: CenturyGothicBold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-infoCardContainer--rowic)
+  :global(.vtex-button) {
+  height: 30px;
+  width: 200px;
+  border: 2px solid #ccff00;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #212165;
+  font-family: centuryGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+/* full banner footer ends */
+
+/* deals starts */
+:global(.vtex-flex-layout-0-x-flexRow--deals) {
+  padding: 30px 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--deals)
+  :global(.vtex-rich-text-0-x-paragraph) {
+  margin-top: 13px;
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+/* deals ends */
+
+/* newsletter starts */
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter) {
+  /* height: 170px; */
+  margin-top: 10px;
+  background-color: #ccff00;
+  padding-bottom: 15px;
+}
+:global(.vtex-store-components-3-x-newsletter) {
+  background-color: #ccff00;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+  :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+  :global(.vtex-rich-text-0-x-paragraph--titnews) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+  :global(.vtex-rich-text-0-x-paragraph--textnews) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-input-prefix__group) {
+  height: 40px;
+  width: 332px;
+  border: 1.5px solid #212165;
+  border-radius: 3px 0 0 3px;
+  background-color: #ffffff;
+  color: rgba(37, 37, 37, 0.5);
+  font-family: CenturyGothicRegular;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-styleguide-9-x-hideDecorators) {
+  color: rgba(37, 37, 37, 0.5);
+  font-family: CenturyGothicRegular;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: rgba(37, 37, 37, 0.5);
+  font-family: CenturyGothicRegular;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-store-components-3-x-buttonContainer) {
+  border-radius: 0 3px 3px 0;
+  color: #ccff00;
+  padding-left: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-button) {
+  margin: 0;
+  color: #ccff00;
+  background-color: #212165;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+  :global(.vtex-button__label) {
+  color: #ccff00;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+  :global(.vtex-store-components-3-x-confirmationTitle) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+  :global(.vtex-store-components-3-x-confirmationText) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter) :global(.vtex-input__error) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+/* newsletter ends */
+/* Home ends */
+
+/* responsive starts */
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedorinfos)
+    :global(.vtex-store-components-3-x-infoCardContainer) {
+    min-height: auto;
+  }
+  :global(.vtex-store-components-3-x-infoCardContainer--rowic) {
+    height: auto;
+  }
+}
+@media (max-width: 568px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
+    :global(.vtex-input-prefix__group) {
+    width: auto;
+  }
+}
+/* responsive ends */
+
+/*----------------------------- PDP Starts ---------------------------*/
+
+/* breadcrumb starts */
+:global(.vtex-breadcrumb-1-x-link) {
+  opacity: 0.4;
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-breadcrumb-1-x-term) {
+  color: #252525;
+  font-family: centuryGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-breadcrumb-1-x-arrow) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-breadcrumb-1-x-caretIcon) {
+  display: none;
+}
+:global(.vtex-breadcrumb-1-x-arrow)::after {
+  content: "/";
+  margin-left: 5px;
+  color: #252525;
+  letter-spacing: 0;
+  line-height: 20px;
+  opacity: 0.4;
+}
+:global(.vtex-breadcrumb-1-x-termArrow) {
+  display: none;
+}
+/* breadcrumb ends */
+/* propduct info  */
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info)
+  :global(.vtex-store-components-3-x-productNameContainer)
+  :global(.vtex-store-components-3-x-productBrand) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 37px;
+}
+:global(.vtex-product-identifier-0-x-product-identifier--productReference) {
+  display: none;
+}
+/* slector talla starts */
+:global(.vtex-store-components-3-x-skuSelectorName) {
+  font-size: 0;
+}
+:global(.vtex-store-components-3-x-skuSelectorName)::before {
+  content: "Elige tu talla";
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+  border: 0;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--m) {
+  box-sizing: border-box;
+  height: 32px;
+  width: 64px;
+  border: 2px solid #212165;
+  border-radius: 3px;
+}
+:global(.vtex-store-components-3-x-skuSelectorItemTextValue) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--s) {
+  box-sizing: border-box;
+  height: 32px;
+  width: 64px;
+  border: 2px solid #212165;
+  border-radius: 3px;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--s)
+  :global(.vtex-store-components-3-x-skuSelectorItemTextValue) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--selected) {
+  height: 32px;
+  width: 64px;
+  border-radius: 3px;
+  background-color: #ccff00;
+  border: 0;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--selected)
+  :global(.vtex-store-components-3-x-frameAround) {
+  border: 0;
+}
+:global(.vtex-store-components-3-x-skuSelectorItem--selected)
+  :global(.vtex-store-components-3-x-skuSelectorItemTextValue) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+/* selector tallas ends */
+
+.carouselGaleryThumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.vtex-product-price-1-x-listPrice) {
+  /* margin-top: 10px; */
+}
+:global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyContainer) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info)
+  :global(.vtex-product-price-1-x-savings) {
+  color: #d81717;
+  font-family: CenturyGothicBold;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+:global(.vtex-product-price-1-x-sellingPrice) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 37px;
+  margin-top: 20px;
+}
+/* select tallas */
+:global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+  margin-left: 0;
+}
+
+/* select quantity starts -----------------------------------------------------------*/
+:global(.vtex-flex-layout-0-x-flexRow--row-qty-buyButton) {
+  margin: 20px 0;
+  display: flex;
+  padding: 0 7px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--row-qty-buyButton)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  padding: 0;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--col-qty) {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle) {
+  display: none;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+  margin: 0;
+}
+/* minus button */
+:global(.vtex-numeric-stepper__minus-button-container) {
+  height: 32px;
+  width: 32px;
+  border: 2px solid #212165;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:global(.vtex-numeric-stepper__minus-button) {
+  background-color: transparent;
+  border: 0;
+}
+:global(.vtex-numeric-stepper__minus-button__text) {
+  /* font-size: 21px;
+  font-weight: bold; */
+  color: #212165;
+}
+
+/* plus button */
+:global(.vtex-numeric-stepper__plus-button-container) {
+  height: 32px;
+  width: 32px;
+  border: 2px solid #212165;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:global(.vtex-numeric-stepper__plus-button) {
+  background-color: transparent;
+  border: 0;
+  line-height: 2.3;
+}
+:global(.vtex-numeric-stepper__plus-button__text) {
+  color: #212165;
+}
+
+/* input qty  */
+:global(.vtex-numeric-stepper__input) {
+  border: 0;
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  width: 3rem;
+}
+
+/* Buy button starts */
+:global(.vtex-flex-layout-0-x-flexColChild--col-buyButton) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--col-buyButton)
+  :global(.vtex-button) {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ccff00;
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  border: 0;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--col-buyButton)
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+:global(.vtex-store-components-3-x-productDescriptionTitle) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+:global(.vtex-store-components-3-x-content) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+:global(.vtex-rich-text-0-x-heading) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+/* reviews starts */
+:global(.vtex-reviews-and-ratings-2-x-container) {
+  box-shadow: 0 0 0 0 #fff;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+  padding: 10px;
+}
+:global(.vtex-reviews-and-ratings-2-x-reviewsHeading) {
+  color: #252525;
+  font-family: centuryGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  border: 0;
+}
+:global(.vtex-reviews-and-ratings-2-x-loginLink) {
+  color: #004fff;
+  font-family: CenturyGothicBold;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+.reviewsCommentsContainer {
+  color: #252525;
+  font-family: centuryGothicBold !important;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+/* select quantity ends */
+/*----------------------------- PDP Ends ---------------------------*/
