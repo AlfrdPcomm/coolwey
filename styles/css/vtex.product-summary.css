@@ -129,10 +129,23 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  /* min-height: 23.9px; */
+  min-height: 23.9px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--row-add-btn-cart)
   :global(.vtex-button__label) {
   padding: 0;
   margin: 0;
+}
+:global(.vtex-product-summary-2-x-nameContainer) {
+  padding-bottom: 3px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--productRating) {
+  margin-bottom: 10px !important;
+}
+:global(.vtex-product-price-1-x-listPrice) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
 }

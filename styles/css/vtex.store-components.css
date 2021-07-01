@@ -538,13 +538,14 @@
 :global(.vtex-product-price-1-x-listPrice) {
   /* margin-top: 10px; */
 }
-:global(.vtex-product-price-1-x-listPriceValue)
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info)
+  :global(.vtex-product-price-1-x-listPriceValue)
   :global(.vtex-product-price-1-x-currencyContainer) {
   color: #252525;
   font-family: CenturyGothicRegular;
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 24px;
+  line-height: 15px;
 }
 :global(.vtex-flex-layout-0-x-flexCol--col-product-info)
   :global(.vtex-product-price-1-x-savings) {
@@ -557,7 +558,8 @@
   margin: 0;
   margin-left: 20px;
 }
-:global(.vtex-product-price-1-x-sellingPrice) {
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info)
+  :global(.vtex-product-price-1-x-sellingPrice) {
   color: #252525;
   font-family: CenturyGothicBold;
   font-size: 30px;
@@ -654,7 +656,11 @@
   align-items: center;
   justify-content: flex-start;
 }
-:global(.vtex-flex-layout-0-x-flexColChild--col-buyButton)
+:global(.vtex-flex-layout-0-x-flexRowContent--row-qty-buyButton) {
+  display: flex;
+}
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info)
+  :global(.vtex-flex-layout-0-x-flexColChild--col-buyButton)
   :global(.vtex-button) {
   height: 40px;
   width: 100%;
@@ -736,4 +742,18 @@
   line-height: 17px;
 }
 /* select quantity ends */
+
+/* desciption product */
+:global(.vtex-store-components-3-x-productDescriptionContainer) {
+  padding: 0 5px;
+}
+@media (max-width: 698.98px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--row-qty-buyButton)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: 50% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--col-product-info) {
+    padding: 0 5px;
+  }
+}
 /*----------------------------- PDP Ends ---------------------------*/
