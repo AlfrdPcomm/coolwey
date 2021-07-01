@@ -45,14 +45,22 @@
   },"image#pbvtex":{
     "props":{
       "height":36,
+<<<<<<< HEAD
       "src":"assets/pbvtex.png",
       "blockClass":"pb"
+=======
+      "src":"assets/pbvtex.png"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },"image#pbpc":{
     "props":{
       "height":36,
+<<<<<<< HEAD
       "src":"assets/pbpc.png",
       "blockClass":["pb","pbpc"]
+=======
+      "src":"assets/pbpc.png"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },
   "flex-layout.col#col2foo":{
@@ -82,7 +90,11 @@
       "horizontalAlign":"center",
       "verticalAlign":"middle",
       "width":"20%",
+<<<<<<< HEAD
       "blockClass":"colfooter3"
+=======
+      "blockClass":"colfooter"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },"flex-layout.row#sm":{
     "title":"Row Social Media",
@@ -102,58 +114,82 @@
     "children":[
       "image#tw"
     ],"props":{
+<<<<<<< HEAD
       "horizontalAlign":"center",
       "blockClass":"pb"
+=======
+      "horizontalAlign":"center"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },"flex-layout.col#image2":{
     "children":[
       "image#ig"
     ],"props":{
+<<<<<<< HEAD
       "horizontalAlign":"center",
       "blockClass":"pb"
+=======
+      "horizontalAlign":"center"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },"flex-layout.col#image3":{
     "children":[
       "image#fb"
     ],"props":{
+<<<<<<< HEAD
       "horizontalAlign":"center",
       "blockClass":"pb"
+=======
+      "horizontalAlign":"center"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },
   "image#tw":{
     "title":"Imagen Twitter",
     "props":{
       "height":33,
+<<<<<<< HEAD
       "src":"assets/tw.png",
       "blockClass":"pb",
       "link":{
         "url":"/",
         "newTab": true
       }
+=======
+      "src":"assets/tw.png"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },
   "image#ig":{
     "title":"Imagen Instagram",
     "props":{
       "height":33,
+<<<<<<< HEAD
       "src":"assets/ig.png",
       "blockClass":"pb",
       "link":{
         "url":"/",
         "newTab": true
       }
+=======
+      "src":"assets/ig.png"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },
   "image#fb":{
     "title":"Imagen Facebook",
     "props":{
       "height":33,
+<<<<<<< HEAD
       "src":"assets/fb.png",
       "blockClass":"pb",
       "link":{
         "url":"/",
         "newTab": true
       }
+=======
+      "src":"assets/fb.png"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     }
   },
 
@@ -216,8 +252,12 @@
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
+<<<<<<< HEAD
       "paddingBottom": 4,
       "blockClass":"textfooter"
+=======
+      "paddingBottom": 4
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     },
     "children": ["flex-layout.col#col2foo"]
   },

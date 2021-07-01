@@ -170,6 +170,7 @@
     ]
   },
   "drawer": {
+<<<<<<< HEAD
     "children": ["menu#drawer"],
     "blocks":[
       "drawer-header#mobile"
@@ -208,6 +209,10 @@
     }
   },
   
+=======
+    "children": ["menu#drawer"]
+  },
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   // col logo 
   "flex-layout.col#logo-mobile": {
     "props": {
@@ -245,6 +250,7 @@
   },
   "menu#drawer": {
     "children": [
+<<<<<<< HEAD
       "menu-item#deportes-mobile",
       "menu-item#mujerdesk",
       "menu-item#hombredesk",
@@ -253,12 +259,20 @@
       "menu-item#gadgetsdesk",
       "menu-item#nuevosdesk",
       "menu-item#saledesk"    
+=======
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     ],
     "props": {
       "orientation": "vertical"
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "logo#mobile": {
     "props": {
       "title": "Logo",
@@ -270,6 +284,7 @@
       "textPosition": "CENTER"
     }
   },
+<<<<<<< HEAD
 
   "logo#mobile2": {
     "props": {
@@ -279,6 +294,8 @@
       "width": "92"
     }
     },
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "menu-item#wishlist": {
     "props": {
       "id": "menu-item-wishlist",

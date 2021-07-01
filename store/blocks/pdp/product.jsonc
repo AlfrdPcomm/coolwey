@@ -15,7 +15,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
       "product-reviews",
+=======
+      "flex-layout.row#tituloshelf-producto",
+      "product-reviews",
+      "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -28,7 +34,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
       "product-reviews",
+=======
+      "flex-layout.row#tituloshelf-producto",
+      "product-reviews",
+      "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -41,7 +53,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
       "product-reviews",
+=======
+      "flex-layout.row#tituloshelf-producto",
+      "product-reviews",
+      "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -290,9 +308,71 @@
       "social": {
         "Facebook": true,
         "WhatsApp": true,
+<<<<<<< HEAD
         "Twitter": false,
         "Pinterest": true
       }
     }
   }
+=======
+        "Twitter": true,
+        "Pinterest": false
+      }
+    }
+  },
+  // --------------------------- Inicio Titulo Nuevos Productos ---------------------------
+
+  "flex-layout.row#tituloshelf-producto":{
+    "title":"Título Shelf",
+    "children":[
+      "flex-layout.col#titshelf-producto"
+    ],"props":{
+      "blockClass":"contenedortitulo",
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#titshelf-producto":{
+    "children":[
+      "rich-text#tituloshelf-producto"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#tituloshelf-producto":{
+    "title":"Texto título Shelf",
+    "props":{
+      "text":"Nuevos Productos",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+
+  // --------------------------- Fin Titulo Nuevos Producots ------------------------------
+
+  // --------------------------- inicio shelf Producots ------------------------------
+  "flex-layout.row#shelf-producto": {
+    "children": ["list-context.product-list#demo1-producto"]
+  },
+  "list-context.product-list#demo1-producto": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-producto"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-producto": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+  // --------------------------- fin shelf Producots ------------------------------
+
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
 }

@@ -16,12 +16,18 @@
 .productBrandName--summaryListDesktop {
   text-decoration: none;
   font-weight: 500;
+<<<<<<< HEAD
   color: #0067C7;
   font-size: .875rem;
+=======
+  color: #0067c7;
+  font-size: 0.875rem;
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
 }
 
 .productBrandName--summaryListMobile {
   text-decoration: none;
+<<<<<<< HEAD
   color: #0067C7;
   font-size: .875rem;
 }
@@ -123,3 +129,8 @@
 }
 
 /*-------------------- Fin Personalización Searc-result --------------------*/
+=======
+  color: #0067c7;
+  font-size: 0.875rem;
+}
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b

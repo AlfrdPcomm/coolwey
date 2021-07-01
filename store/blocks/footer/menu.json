@@ -1,8 +1,12 @@
 {
   "vtex.menu@2.x:menu#col1": {
     "props": {
+<<<<<<< HEAD
       "orientation": "vertical",
       "blockClass": "menucol1"
+=======
+      "orientation": "vertical"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     },
     "children": [
       "menu-item#cuenta",
@@ -191,8 +195,12 @@
 
   "vtex.menu@2.x:menu#col3": {
     "props": {
+<<<<<<< HEAD
       "orientation": "vertical",
       "blockClass": "menucol1"
+=======
+      "orientation": "vertical"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     },
     "children": [
       "menu-item#formas",

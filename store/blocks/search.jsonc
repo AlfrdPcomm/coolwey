@@ -63,6 +63,10 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
+<<<<<<< HEAD
+=======
+      "flex-layout.row#searchtitle",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "flex-layout.row#result"
     ],
     "props": {
@@ -75,6 +79,7 @@
     "children": ["breadcrumb.search"],
     "props": {
       "preserveLayoutOnMobile": true,
+<<<<<<< HEAD
       "fullWidth": true,
       "marginTop":7,
       "marginBottom":7
@@ -92,6 +97,13 @@
     ],"props":{
       "horizontalAlign":"center"
     }
+=======
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#searchtitle": {
+    "children": ["search-title.v2"]
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
@@ -119,6 +131,7 @@
     }
   },
   "flex-layout.row#searchinfo": {
+<<<<<<< HEAD
     "children": [
       "flex-layout.col#productCount", 
       "flex-layout.col#searchTitle",
@@ -133,6 +146,12 @@
   },
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2"],
+=======
+    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": ["order-by.v2", "gallery-layout-switcher"],
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -177,8 +196,14 @@
 
   "search-result-layout.mobile": {
     "children": [
+<<<<<<< HEAD
       "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfomobile",
+=======
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
@@ -202,7 +227,12 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
+<<<<<<< HEAD
       "flex-layout.col#filterMobile"
+=======
+      "flex-layout.col#filterMobile",
+      "flex-layout.col#switcherMobile"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     ],
     "props": {
       "preserveLayoutOnMobile": true,

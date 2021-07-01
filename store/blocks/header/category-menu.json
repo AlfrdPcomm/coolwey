@@ -1,6 +1,7 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
+<<<<<<< HEAD
       "experimentalOptimizeRendering": true,
       "blockClass":"menprincontenedor"
     },
@@ -13,6 +14,14 @@
       "menu-item#gadgetsdesk",
       "menu-item#nuevosdesk",
       "menu-item#saledesk"
+=======
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     ]
   },
   "menu-item#category-apparel": {
@@ -111,6 +120,7 @@
       }
     }
   },
+<<<<<<< HEAD
   "menu-item#mujerdesk": {
     "props": {
       "id": "menu-item-mujerdsk",
@@ -501,6 +511,8 @@
     ]
   },
   
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",
