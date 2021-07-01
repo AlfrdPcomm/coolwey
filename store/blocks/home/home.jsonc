@@ -239,14 +239,14 @@
       "blockClass":"contenedortitulo",
       "horizontalAlign":"center"
     }
-  },"flex-layout.col#titshelf":{
+  },
+  "flex-layout.col#titshelf":{
     "children":[
       "rich-text#tituloshelf"
     ],"props":{
       "horizontalAlign":"center"
     }
   },
-
   "rich-text#tituloshelf":{
     "title":"Texto título Shelf",
     "props":{
