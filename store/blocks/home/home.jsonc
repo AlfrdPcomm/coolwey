@@ -239,14 +239,22 @@
       "blockClass":"contenedortitulo",
       "horizontalAlign":"center"
     }
+<<<<<<< HEAD
+  },"flex-layout.col#titshelf":{
+=======
   },
   "flex-layout.col#titshelf":{
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     "children":[
       "rich-text#tituloshelf"
     ],"props":{
       "horizontalAlign":"center"
     }
   },
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "rich-text#tituloshelf":{
     "title":"Texto título Shelf",
     "props":{

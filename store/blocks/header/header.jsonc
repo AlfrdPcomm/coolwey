@@ -170,8 +170,49 @@
     ]
   },
   "drawer": {
+<<<<<<< HEAD
+    "children": ["menu#drawer"],
+    "blocks":[
+      "drawer-header#mobile"
+    ]
+  },
+  "drawer-header#mobile":{
+    "children":[
+      "flex-layout.row#headerdrawer"
+    ]    
+  },"flex-layout.row#headerdrawer":{
+    "children":[
+      "flex-layout.col#imglogdrawer",
+      "flex-layout.col#closebtn"
+    ],"props":{
+      "blockClass":"contheaderdrawer",
+      "preserveLayoutOnMobile":true,
+      "marginTop":5,
+      "marginBottom":3
+    }
+  },"flex-layout.col#imglogdrawer":{
+    "children":[
+      "logo#mobile2"
+    ],"props":{
+      "width":"80%",
+      "horizontalAlign":"left",
+      "blockClass":"cologodrawer"
+    }
+  },
+
+  "flex-layout.col#closebtn":{
+    "children":[
+      "drawer-close-button"
+    ],"props":{
+      "width":"20%",
+      "horizontalAlign":"right"
+    }
+  },
+  
+=======
     "children": ["menu#drawer"]
   },
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   // col logo 
   "flex-layout.col#logo-mobile": {
     "props": {
@@ -209,14 +250,29 @@
   },
   "menu#drawer": {
     "children": [
+<<<<<<< HEAD
+      "menu-item#deportes-mobile",
+      "menu-item#mujerdesk",
+      "menu-item#hombredesk",
+      "menu-item#fraganciasdesk",
+      "menu-item#cosmeticosdesk",
+      "menu-item#gadgetsdesk",
+      "menu-item#nuevosdesk",
+      "menu-item#saledesk"    
+=======
       "menu-item#category-apparel",
       "menu-item#category-home",
       "menu-item#more"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     ],
     "props": {
       "orientation": "vertical"
     }
   },
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "logo#mobile": {
     "props": {
       "title": "Logo",
@@ -228,6 +284,18 @@
       "textPosition": "CENTER"
     }
   },
+<<<<<<< HEAD
+
+  "logo#mobile2": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logocw.png",
+      "width": "92"
+    }
+    },
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "menu-item#wishlist": {
     "props": {
       "id": "menu-item-wishlist",

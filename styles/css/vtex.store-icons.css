@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+.expandIcon {
+  color: #727273;
+}
+=======
 :global(.vtex-store-components-3-x-shareSocialIcon):first-child {
   display: none;
 }
@@ -34,3 +39,4 @@
   background-image: url("/arquivos/instagram-icon.svg");
   background-repeat: no-repeat;
 }
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b

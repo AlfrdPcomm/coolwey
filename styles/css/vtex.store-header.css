@@ -471,3 +471,86 @@
     top: 10px;
   }
 }
+<<<<<<< HEAD
+
+/*----------------------  Inicio personalización menu desk  -------------------------*/
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin){
+  font-family: 'CenturyGothicBold';
+  font-size: 16px;
+}
+
+
+
+:global(.vtex-menu-2-x-styledLinkContent--titcats){
+  font-size: 14px;
+  color: #212165;
+  font-family: 'CenturyGothicBold';
+
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--itemsubcat){
+  color: black;
+  font-size: 12px;
+  padding-top: 5px !important;
+  padding-bottom: 5px!important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemsubcat){
+  padding-top: 5px !important;
+  padding-bottom: 5px!important;
+  font-family: 'CenturyGothic';
+}
+
+:global(.vtex-menu-2-x-menuContainerNav){
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--contheaderdrawer){
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--cologodrawer){
+  border-bottom: 1px solid #979797;
+  padding-bottom: 25px;
+}
+
+:global(.vtex-store-drawer-0-x-closeIcon){
+  display: none;
+}
+
+:global(.vtex-store-drawer-0-x-closeIconButton)::before{
+  content:url(assets/left.png);
+}
+/*----------------- Mobile -------------------------------*/
+@media (max-width:1024px){
+  :global(.vtex-menu-2-x-styledLinkContent--itemenprin){
+    color: #212165;
+    font-size: 16px;
+
+  }
+
+  :global(.vtex-menu-2-x-styledLinkContent--itemsubcat){
+    font-family: 'CenturyGothic' !important;
+  }
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isOpen),
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isClosed){
+    font-size: 0%;
+}
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isClosed)::before{
+    content: url(assets/open.png);
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isOpen)::before{
+    content: url(assets/close.png);
+}
+/*----------------------  Fin personalización menu desk  -------------------------*/
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b

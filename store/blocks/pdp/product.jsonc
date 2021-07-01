@@ -15,9 +15,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
+      "product-reviews",
+=======
       "flex-layout.row#tituloshelf-producto",
       "product-reviews",
       "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -30,9 +34,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
+      "product-reviews",
+=======
       "flex-layout.row#tituloshelf-producto",
       "product-reviews",
       "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -45,9 +53,13 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+<<<<<<< HEAD
+      "product-reviews",
+=======
       "flex-layout.row#tituloshelf-producto",
       "product-reviews",
       "flex-layout.row#shelf-producto",
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
       "product-questions-and-answers"
     ]
   },
@@ -296,6 +308,13 @@
       "social": {
         "Facebook": true,
         "WhatsApp": true,
+<<<<<<< HEAD
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  }
+=======
         "Twitter": true,
         "Pinterest": false
       }
@@ -355,4 +374,5 @@
   }
   // --------------------------- fin shelf Producots ------------------------------
 
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
 }

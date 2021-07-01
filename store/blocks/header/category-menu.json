@@ -1,12 +1,27 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
+<<<<<<< HEAD
+      "experimentalOptimizeRendering": true,
+      "blockClass":"menprincontenedor"
+    },
+    "children": [
+      "menu-item#deportesdesk",
+      "menu-item#mujerdesk",
+      "menu-item#hombredesk",
+      "menu-item#fraganciasdesk",
+      "menu-item#cosmeticosdesk",
+      "menu-item#gadgetsdesk",
+      "menu-item#nuevosdesk",
+      "menu-item#saledesk"
+=======
       "experimentalOptimizeRendering": true
     },
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
       "menu-item#more"
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
     ]
   },
   "menu-item#category-apparel": {
@@ -105,6 +120,399 @@
       }
     }
   },
+<<<<<<< HEAD
+  "menu-item#mujerdesk": {
+    "props": {
+      "id": "menu-item-mujerdsk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Mujer",
+        "noFollow": false,
+        "tagTitle": "MUJER",
+        "text": "MUJER"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#hombredesk": {
+    "props": {
+      "id": "menu-item-homdsk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Hombre",
+        "noFollow": false,
+        "tagTitle": "HOMBRE",
+        "text": "HOMBRE"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#fraganciasdesk": {
+    "props": {
+      "id": "menu-item-fragdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Fragancias",
+        "noFollow": false,
+        "tagTitle": "FRAGANCIAS",
+        "text": "FRAGANCIAS"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#cosmeticosdesk": {
+    "props": {
+      "id": "menu-item-cosdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Cosmeticos",
+        "noFollow": false,
+        "tagTitle": "COSMÉTICOS",
+        "text": "COSMÉTICOS"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#gadgetsdesk": {
+    "props": {
+      "id": "menu-item-gadesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Gadgets",
+        "noFollow": false,
+        "tagTitle": "GADGETS",
+        "text": "GADGETS"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#nuevosdesk": {
+    "props": {
+      "id": "menu-item-newdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Nuevos-Productos",
+        "noFollow": false,
+        "tagTitle": "NUEVOS PRODUCTOS",
+        "text": "NUEVOS PRODUCTOS"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+  "menu-item#saledesk": {
+    "props": {
+      "id": "menu-item-saledesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Sale",
+        "noFollow": false,
+        "tagTitle": "SALE",
+        "text": "SALE"
+      },
+      "blockClass":"itemenprin"
+    }
+  },
+
+
+  "menu-item#deportesdesk": {
+    "props": {
+      "id": "menu-item-deportesdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "DEPORTES",
+        "text": "DEPORTES"
+      },
+      "blockClass":"itemenprin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#deportesdesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#deportesdesk": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-deportesdesk"
+    ]
+  },
+  "flex-layout.row#menu-deportesdesk": {
+    "children": [
+      "flex-layout.col#catmen1",
+      "flex-layout.col#catmen2"
+    ]
+  },
+  "flex-layout.col#catmen1": {
+    "children": [
+      "menu-item#titcat1",
+      "menu-item#itemcat11",
+      "menu-item#itemcat12",
+      "menu-item#itemcat13",
+      "menu-item#itemcat14",
+      "menu-item#itemcat15",
+      "menu-item#itemcat16",
+      "menu-item#itemcat17",
+      "menu-item#itemcat18"
+    ]
+  },
+
+  "menu-item#titcat1": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Ropa-deportiva",
+        "noFollow": true,
+        "tagTitle": "Ropa Deportiva",
+        "text":"ROPA DEPORTIVA" 
+      }
+    }
+  },
+
+  "menu-item#itemcat11":{
+    "props":{
+      "type":"category",
+      "categoryId": 4,
+      "text":"Camiseta",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat12":{
+    "props":{
+      "type":"category",
+      "categoryId": 5,
+      "text":"Conjunto Deportivo",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat13":{
+    "props":{
+      "type":"category",
+      "categoryId": 6,
+      "text":"Licra",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat14":{
+    "props":{
+      "type":"category",
+      "categoryId": 7,
+      "text":"Mallas",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat15":{
+    "props":{
+      "type":"category",
+      "categoryId": 8,
+      "text":"Pantalón",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat16":{
+    "props":{
+      "type":"category",
+      "categoryId": 9,
+      "text":"Playera",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat17":{
+    "props":{
+      "type":"category",
+      "categoryId": 10,
+      "text":"Sudadera",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat18":{
+    "props":{
+      "type":"category",
+      "categoryId": 11,
+      "text":"Top",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+
+
+
+  "flex-layout.col#catmen2": {
+    "children": [
+      "menu-item#titcat2",
+      "menu-item#itemcat21"
+    ],"props":{
+      "preventVerticalStretch":true
+    }
+  },
+
+  "menu-item#titcat2": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Calzado-Deportivo",
+        "noFollow": true,
+        "tagTitle": "Calzado Deportivo",
+        "text": "CALZADO DEPORTIVO"
+      }
+    }
+  },
+
+  "menu-item#itemcat21":{
+    "props":{
+      "type":"category",
+      "categoryId": 12,
+      "text":"Tenis",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+
+  "menu-item#deportes-mobile": {
+    "props": {
+      "id": "deportes mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "DEPORTES",
+        "text": "DEPORTES"
+      },"blockClass":"itemenprin"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#deportesmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#deportesmob": {
+    "children": ["vtex.menu@2.x:menu#deportesmob"]
+  },
+
+  "vtex.menu@2.x:menu#deportesmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ropadep-mobile",  
+      "menu-item#calzadodep-mobile"
+    ]
+  },
+
+  "menu-item#ropadep-mobile": {
+    "props": {
+      "id": "ropadepmobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Ropa-Deportiva",
+        "noFollow": true,
+        "tagTitle": "ROPA DEPORTIVA",
+        "text": "ROPA DEPEORTIVA"
+      },
+      "blockClass":"titcats"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ropadepmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ropadepmob": {
+    "children": ["vtex.menu@2.x:menu#ropadepmob"]
+  },
+
+  "vtex.menu@2.x:menu#ropadepmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#itemcat11",
+      "menu-item#itemcat12",
+      "menu-item#itemcat13",
+      "menu-item#itemcat14",
+      "menu-item#itemcat15",
+      "menu-item#itemcat16",
+      "menu-item#itemcat17",
+      "menu-item#itemcat18"
+    ]
+  },
+
+  "menu-item#calzadodep-mobile": {
+    "props": {
+      "id": "calzadodep-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Ropa-Deportiva",
+        "noFollow": true,
+        "tagTitle": "CALZADO DEPORTIVO",
+        "text": "CALZADO DEPEORTIVO"
+      },"blockClass":"titcats"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#calzadodep-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#calzadodep-mobile": {
+    "children": ["vtex.menu@2.x:menu#calzadodep-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#calzadodep-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#itemcat21"
+    ]
+  },
+  
+=======
+>>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",
