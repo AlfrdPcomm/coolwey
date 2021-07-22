@@ -25,3 +25,94 @@
   color: #0067c7;
   font-size: 0.875rem;
 }
+
+/*-------------------- Inicio Personalización Searc-result --------------------*/
+:global(.vtex-breadcrumb-1-x-homeIcon),
+:global(.vtex-breadcrumb-1-x-caretIcon) {
+  display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-homeLink)::before {
+  content: "Inicio";
+}
+
+:global(.vtex-breadcrumb-1-x-arrow--1)::before,
+:global(.vtex-breadcrumb-1-x-arrow--2)::before,
+:global(.vtex-breadcrumb-1-x-arrow--3)::before,
+:global(.vtex-breadcrumb-1-x-arrow--4)::before {
+  content: "/";
+}
+
+:global(.vtex-search-result-3-x-galleryTitle--layout) {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-family: "CenturyGothicBold";
+}
+
+:global(.vtex-search-result-3-x-filterMessage) {
+  font-size: 30px;
+  font-family: "CenturyGothicBold";
+}
+
+:global(.vtex-search-result-3-x-filterTitle) {
+  font-size: 20px;
+  font-family: "CenturyGothicBold" !important;
+  color: #000000 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterCol) {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  :global(.vtex-search-result-3-x-filterBreadcrumbsItemName),
+  :global(.vtex-search-result-3-x-filterBreadcrumbsText),
+  :global(.vtex-search-result-3-x-galleryTitle--layout) {
+    font-size: 16px !important;
+    font-family: "CenturyGothicBold" !important;
+    color: #000000;
+  }
+
+  :global(.vtex-search-result-3-x-accordionFilterItemTitle) {
+    font-size: 14px;
+    font-family: "CenturyGothic";
+  }
+
+  :global(.vtex-search-result-3-x-orderByText) {
+    display: none;
+  }
+
+  :global(.vtex-search-result-3-x-filterPopupTitle) {
+    font-size: 10px;
+  }
+
+  :global(.vtex-search-result-3-x-filterIcon) {
+    width: 10px;
+  }
+
+  :global(.vtex-search-result-3-x-accordionFilterItemTag) :global(.vtex-tag) {
+    border-radius: 0% !important;
+    background-color: #ccff00;
+    color: #212165;
+  }
+
+  :global(.vtex__icon-check) {
+    background: #212165;
+  }
+
+  :global(.vtex-search-result-3-x-filterApplyButtonWrapper)
+    :global(.vtex-button) {
+    background-color: #ccff00;
+    border-radius: 75px;
+  }
+
+  :global(.vtex-search-result-3-x-filterApplyButtonWrapper)
+    :global(.vtex-button)
+    :global(.vtex-button__label) {
+    color: #212165;
+  }
+}
+
+/*-------------------- Fin Personalización Searc-result --------------------*/

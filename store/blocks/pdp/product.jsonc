@@ -124,7 +124,8 @@
     "children": [
       "flex-layout.row#product-image",
       "product-bookmark",
-      "product-specification-badges"
+      "product-specification-badges",
+      "flex-layout.col#wish-pdp"
     ]
   },
 
@@ -142,6 +143,16 @@
     "props": {
       "width": "49%",
       "rowGap": 0
+    }
+  },
+  "flex-layout.col#wish-pdp":{
+    "children":[
+      "add-to-list-btn"
+    ],
+    "props":{
+      "width":"auto",
+      "blockClass":"colwish-pdp",
+      "link": {"url": "/account#/wishlist"}
     }
   },
   "flex-layout.row#product-image": {
@@ -296,9 +307,10 @@
       "social": {
         "Facebook": true,
         "WhatsApp": true,
-        "Twitter": true,
-        "Pinterest": false
-      }
+        "Twitter": false,
+        "Pinterest": true
+      },
+      "blockClass": "share-icons"
     }
   },
   // --------------------------- Inicio Titulo Nuevos Productos ---------------------------

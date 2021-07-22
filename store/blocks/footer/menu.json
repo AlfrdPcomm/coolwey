@@ -1,7 +1,8 @@
 {
   "vtex.menu@2.x:menu#col1": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-menu-mobile"
     },
     "children": [
       "menu-item#cuenta",
@@ -190,7 +191,9 @@
 
   "vtex.menu@2.x:menu#col3": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-menu-mobile-formas"
+
     },
     "children": [
       "menu-item#formas",
@@ -299,7 +302,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/formas-de-pago",
         "noFollow": true,
         "tagTitle": "Formas de Pago",
         "text": "Formas de Pago"

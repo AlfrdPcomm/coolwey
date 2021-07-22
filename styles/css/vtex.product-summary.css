@@ -58,6 +58,13 @@
   background-repeat: no-repeat, repeat;
 }
 :global(.vtex-flex-layout-0-x-flexRow--btn-wishlist-container)
+  :global(.vtex-wish-list-1-x-fill) {
+  background: url(/arquivos/wishlist-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  border: 1px solid red;
+}
+:global(.vtex-flex-layout-0-x-flexRow--btn-wishlist-container)
   :global(.vtex-button):hover {
   background-color: transparent;
 }
@@ -148,4 +155,7 @@
   font-size: 12px;
   letter-spacing: 0;
   line-height: 15px;
+}
+:global(.vtex-product-price-1-x-installments--summary) {
+  display: none;
 }

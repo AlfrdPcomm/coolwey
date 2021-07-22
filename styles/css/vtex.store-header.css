@@ -20,6 +20,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: #fff;
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
@@ -63,7 +64,7 @@
 
 /* stick wrapper with the same color as the desktop/mobile header */
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 /* resize the logo for neat effect */
@@ -127,7 +128,6 @@
 :global(.vtex-store-components-3-x-searchBarContainer)
   :global(.vtex-input-prefix__group) {
   border: 0;
-  background: #f6f6f6;
   border-radius: 8px;
   height: 40px;
   color: rgba(37, 37, 37, 0.66);
@@ -135,6 +135,15 @@
   font-size: 12px;
   letter-spacing: 0;
   line-height: 20px;
+  background-color: #f6f6f6;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input__suffix) {
+  background-color: transparent;
 }
 :global(.vtex-store-components-3-x-searchBarContainer)
   :global(.vtex-styleguide-9-x-input)::placeholder {
@@ -396,10 +405,18 @@
 /* header login desktop ends */
 
 /* header menu starts */
+:global(.vtex-flex-layout-0-x-flexRow--menu-link) {
+  height: 35px;
+}
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link) {
   height: 35px;
 }
-
+:global(.vtex-menu-2-x-styledLinkContainer--itemenprin) {
+  padding: 0 !important;
+}
+:global(.vtex-menu-2-x-submenuWrapper) {
+  margin-top: 7px !important;
+}
 /* header menu ends */
 
 /* header mobile starts*/
@@ -470,4 +487,85 @@
     :global(.vtex-product-list-0-x-quantitySelectorContainer) {
     top: 10px;
   }
+}
+
+/*----------------------  Inicio personalización menu desk  -------------------------*/
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin) {
+  font-family: "CenturyGothicBold";
+  font-size: 16px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--titcats) {
+  font-size: 14px;
+  color: #212165;
+  font-family: "CenturyGothicBold";
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemsubcat) {
+  color: black;
+  font-size: 12px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemsubcat) {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-family: "CenturyGothic";
+}
+
+:global(.vtex-menu-2-x-menuContainerNav) {
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--contheaderdrawer) {
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--cologodrawer) {
+  border-bottom: 1px solid #979797;
+  padding-bottom: 25px;
+}
+
+:global(.vtex-store-drawer-0-x-closeIcon) {
+  display: none;
+}
+
+:global(.vtex-store-drawer-0-x-closeIconButton)::before {
+  content: url(assets/left.png);
+}
+/*----------------- Mobile -------------------------------*/
+@media (max-width: 1024px) {
+  :global(.vtex-menu-2-x-styledLinkContent--itemenprin) {
+    color: #212165;
+    font-size: 16px;
+  }
+
+  :global(.vtex-menu-2-x-styledLinkContent--itemsubcat) {
+    font-family: "CenturyGothic" !important;
+  }
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isOpen),
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isClosed) {
+  font-size: 0%;
+}
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isClosed)::before {
+  content: url(assets/open.png);
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemenprin)
+  :global(.vtex-menu-2-x-accordionIcon--isOpen)::before {
+  content: url(assets/close.png);
+}
+/*----------------------  Fin personalización menu desk  -------------------------*/
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge--mini-carrito) {
+  height: 14px;
+  width: 14px;
+  background-color: #c80f0f;
 }

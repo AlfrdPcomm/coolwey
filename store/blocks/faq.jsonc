@@ -18,11 +18,16 @@
     "children": [
       "rich-text#faq",
       "disclosure-layout-group#group"
-    ]
+    ],
+    "props": {
+        "width": "80%",
+        "horizontalAlign": "center",
+        "blockClass": "titlecol-institucional"
+    }
   },
   "rich-text#faq": {
     "props": {
-      "text": "## FAQ"
+      "text": "## Preguntas frecuentes"
     }
   },
 
@@ -61,7 +66,8 @@
   },
   "rich-text#answer1": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "Call us at the number (212) 1234-1234.",
+      "blockClass": "contenido-institucional"
     }
   },
 
@@ -86,16 +92,16 @@
   },
   "rich-text#question2": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "How can I track my order and Lorem ipsum dolor sit amet and dolor sit amet al ?",
+      "blockClass": "contenido-institucional"
     }
   },
   "rich-text#answer2": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "blockClass": "contenido-institucional"
     }
   },
-
-
   "disclosure-layout#third": {
     "props": {
       "animated": true
@@ -117,12 +123,14 @@
   },
   "rich-text#question3": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "How can I change my shipping address?",
+      "blockClass": "contenido-institucional"
     }
   },
   "rich-text#answer3": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "Call us at the number (212) 1234-1234.",
+      "blockClass": "contenido-institucional"
     }
   },
 
@@ -148,12 +156,14 @@
   },
   "rich-text#question4": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "How can I track my order?",
+      "blockClass": "contenido-institucional"
     }
   },
   "rich-text#answer4": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "After logging into your account, you can find this info at the link Orders.",
+      "blockClass": "contenido-institucional"
     }
   },
 

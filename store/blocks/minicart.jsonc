@@ -2,7 +2,8 @@
   "add-to-cart-button": {
     "props": {
       "addToCartFeedback": "customEvent",
-      "customPixelEventId": "add-to-cart-button"
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Agregar al carrito"
     }
   },
 
@@ -287,7 +288,7 @@
     },
     "rich-text#minicart-default-empty-state": {
       "props": {
-        "text": "Your cart is empty."
+        "text": "Tu carrito está vacío."
       }
     }
   }

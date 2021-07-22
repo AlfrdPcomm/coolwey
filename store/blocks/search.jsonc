@@ -63,7 +63,6 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
@@ -76,11 +75,23 @@
     "children": ["breadcrumb.search"],
     "props": {
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "marginTop":7,
+      "marginBottom":7
     }
   },
   "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+    "children": [
+      "flex-layout.col#titlemob"      
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#titlemob":{
+    "children":[
+      "search-title.v2"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
@@ -108,10 +119,20 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.col#productCount", 
+      "flex-layout.col#searchTitle",
+      "flex-layout.row#orderByAndSwitcher"]
+  },
+  "flex-layout.col#searchTitle":{
+    "children":[
+      "search-title.v2"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
   },
   "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
+    "children": ["order-by.v2"],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -156,9 +177,8 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
@@ -182,8 +202,7 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#filterMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,

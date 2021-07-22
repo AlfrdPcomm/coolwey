@@ -402,6 +402,20 @@
     :global(.vtex-input-prefix__group) {
     width: auto;
   }
+  :global(.vtex-store-components-3-x-infoCardContainer--rowic) {
+    margin-top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.4; */
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedortitulo) {
+    margin-top: 3px;
+  }
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer--shelf) {
+    display: none;
+  }
+  :global(.vtex-store-components-3-x-infoCardContainer--rowic-descuentos) {
+    margin-top: 0;
+  }
 }
 /* responsive ends */
 
@@ -433,17 +447,29 @@
 :global(.vtex-breadcrumb-1-x-caretIcon) {
   display: none;
 }
+:global(.vtex-breadcrumb-1-x-arrow) {
+  font-size: 0;
+}
 :global(.vtex-breadcrumb-1-x-arrow)::after {
+}
+:global(.vtex-breadcrumb-1-x-link)::after {
   content: "/";
+  font-size: 16px;
   margin-left: 5px;
   color: #252525;
   letter-spacing: 0;
   line-height: 20px;
   opacity: 0.4;
 }
-:global(.vtex-breadcrumb-1-x-termArrow) {
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedortitulo) {
+  padding-top: 20px;
+}
+/* :global(.vtex-breadcrumb-1-x-arrow):last-child {
   display: none;
 }
+:global(.vtex-breadcrumb-1-x-termArrow):last-child {
+  display: none;
+} */
 /* breadcrumb ends */
 /* propduct info  */
 :global(.vtex-flex-layout-0-x-flexCol--col-product-info)
@@ -743,6 +769,44 @@
 }
 /* select quantity ends */
 
+/* add to wishlist starts */
+:global(.vtex-wish-list-1-x-wishlistIcon) {
+  background: url(/arquivos/wishlist-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  align-items: flex-start;
+  padding-top: 0;
+}
+/* add to wishlist ends */
+
+/* share icons starts */
+:global(.vtex-store-components-3-x-shareContainer) {
+  display: flex;
+}
+:global(.vtex-store-components-3-x-shareLabel) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+:global(.vtex-store-components-3-x-shareSocialButton) {
+  margin-left: 12px;
+}
+/* share icons ends */
+
+.carouselGaleryThumbs .swiper-wrapper {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
 /* desciption product */
 :global(.vtex-store-components-3-x-productDescriptionContainer) {
   padding: 0 5px;
@@ -757,3 +821,167 @@
   }
 }
 /*----------------------------- PDP Ends ---------------------------*/
+/*----------------------------- Institucionales Starts ---------------------------*/
+:global(.vtex-flex-layout-0-x-flexColChild--titlecol-institucional)
+  :global(.vtex-rich-text-0-x-heading) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-rich-text-0-x-wrapper--contenido-institucional)
+  :global(.vtex-rich-text-0-x-heading) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--contenido-institucional)
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #000000;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: justify;
+}
+/*----------------------------- Institucionales Ends ---------------------------*/
+
+/*######################### Estilos Mi Cuenta #################################*/
+
+:global(.vtex-account_menu-link) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+:global(.vtex-my-account-1-x-boxContainer) {
+  border-color: #212165;
+}
+:global(.vtex-pageHeader__title) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-my-account-1-x-dataEntryLabel) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-profile-form-3-x-personalFields) :global(.vtex-input__label) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-my-account-1-x-dataEntryChildren) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper)
+  :global(.vtex-button) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-my-account-1-x-newsletterContainerTitle) {
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+:global(.vtex-my-account-1-x-newsletterContainerMessage) {
+  color: #212165;
+  font-family: CenturyGothicRegular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+:global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #212165;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+:global(.vtex-my-account-1-x-addressCreate) :global(.vtex-dropdown__label) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+:global(.vtex-address-form__postalCode) :global(.vtex-input__label) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+:global(.vtex-my-account-1-x-addressCreate) :global(.vtex-input__label) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+:global(.vtex-my-account-1-x-boxContainerBody) {
+  color: #212165 !important;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+:global(.vtex-input__label) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--titleWishlist)
+  :global(.vtex-rich-text-0-x-heading) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+:global(.vtex-slider-layout-0-x-paginationDotsContainer--shelf) {
+  display: none;
+}

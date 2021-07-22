@@ -170,8 +170,44 @@
     ]
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": ["menu#drawer"],
+    "blocks":[
+      "drawer-header#mobile"
+    ]
   },
+  "drawer-header#mobile":{
+    "children":[
+      "flex-layout.row#headerdrawer"
+    ]    
+  },"flex-layout.row#headerdrawer":{
+    "children":[
+      "flex-layout.col#imglogdrawer",
+      "flex-layout.col#closebtn"
+    ],"props":{
+      "blockClass":"contheaderdrawer",
+      "preserveLayoutOnMobile":true,
+      "marginTop":5,
+      "marginBottom":3
+    }
+  },"flex-layout.col#imglogdrawer":{
+    "children":[
+      "logo#mobile2"
+    ],"props":{
+      "width":"80%",
+      "horizontalAlign":"left",
+      "blockClass":"cologodrawer"
+    }
+  },
+
+  "flex-layout.col#closebtn":{
+    "children":[
+      "drawer-close-button"
+    ],"props":{
+      "width":"20%",
+      "horizontalAlign":"right"
+    }
+  },
+  
   // col logo 
   "flex-layout.col#logo-mobile": {
     "props": {
@@ -209,9 +245,14 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#deportes-mobile",
+      "menu-item#mujerdesk",
+      "menu-item#hombredesk",
+      "menu-item#fraganciasdesk",
+      "menu-item#cosmeticosdesk",
+      "menu-item#gadgetsdesk",
+      "menu-item#nuevosdesk",
+      "menu-item#saledesk"    
     ],
     "props": {
       "orientation": "vertical"
@@ -228,6 +269,15 @@
       "textPosition": "CENTER"
     }
   },
+
+  "logo#mobile2": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logocw.png",
+      "width": "92"
+    }
+    },
   "menu-item#wishlist": {
     "props": {
       "id": "menu-item-wishlist",

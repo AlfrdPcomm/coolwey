@@ -239,8 +239,7 @@
       "blockClass":"contenedortitulo",
       "horizontalAlign":"center"
     }
-  },
-  "flex-layout.col#titshelf":{
+  },"flex-layout.col#titshelf":{
     "children":[
       "rich-text#tituloshelf"
     ],"props":{
@@ -542,7 +541,7 @@
       "headline": "HASTA 50% OFF",
       "callToActionText": "VER PRODUCTOS",
       "callToActionUrl": "/runner",
-      "blockClass": "rowic",
+      "blockClass": ["rowic", "rowic-descuentos"],
       "textAlignment": "center"
     }
   },
