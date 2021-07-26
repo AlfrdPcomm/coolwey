@@ -15,59 +15,67 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-<<<<<<< HEAD
-      "product-reviews",
-=======
+      "flex-layout.row#reviews",
       "flex-layout.row#tituloshelf-producto",
-      "product-reviews",
       "flex-layout.row#shelf-producto",
->>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
-      "product-questions-and-answers"
-    ]
+      "product-questions-and-answers",
+      "back-to-top-button"
+    ],"props":{
+      "blockClass":"contenedorDesk"
+    }
+  },
+  "flex-layout.row#reviews":{
+    "children":[
+      "product-reviews"
+    ],"props":{
+      "blockClass":"margen"
+    }
   },
 
   "responsive-layout.tablet#pdp":{
     "children":[
-      "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main-tablet",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-<<<<<<< HEAD
-      "product-reviews",
-=======
+      "flex-layout.row#reviews",
       "flex-layout.row#tituloshelf-producto",
-      "product-reviews",
       "flex-layout.row#shelf-producto",
->>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "back-to-top-button"
     ]
   },
 
   "responsive-layout.phone#pdp":{
     "children":[
-      "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main-phone",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-<<<<<<< HEAD
-      "product-reviews",
-=======
+      "flex-layout.row#reviews",
       "flex-layout.row#tituloshelf-producto",
-      "product-reviews",
       "flex-layout.row#shelf-producto",
->>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
-      "product-questions-and-answers"
-    ]
+      "product-questions-and-answers",
+      "back-to-top-button"
+    ],"props":{
+      "blockClass":"margen"
+    }
+  },
+
+  "product-reviews":{
+    "props":{
+      "blockClass":"margen"
+    }
   },
 
   "flex-layout.row#specifications-title": {
     "children": [
       "rich-text#specifications"
-    ]
+    ],"props":{
+      "blockClass":"margen"
+    }
   },
   "rich-text#specifications": {
     "props": {
@@ -76,13 +84,15 @@
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "marginTop": 4
+      "marginTop": 4,
+      "blockClass":"margen"
     },
     "children": ["breadcrumb"]
   },
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass":"margen"
     },
     "children": ["product-description"]
   },
@@ -93,7 +103,8 @@
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
-      "paddingBottom": 7
+      "paddingBottom": 7,
+      "blockClass":"margen"
     },
     "children": [
       "flex-layout.col#stack", 
@@ -136,7 +147,8 @@
     "children": [
       "flex-layout.row#product-image",
       "product-bookmark",
-      "product-specification-badges"
+      "product-specification-badges",
+      "flex-layout.col#wish-pdp"
     ]
   },
 
@@ -153,7 +165,18 @@
     "children": ["stack-layout"],
     "props": {
       "width": "49%",
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass":"margenmob"
+    }
+  },
+  "flex-layout.col#wish-pdp":{
+    "children":[
+      "add-to-list-btn"
+    ],
+    "props":{
+      "width":"auto",
+      "blockClass":"colwish-pdp",
+      "link": {"url": "/account#/wishlist"}
     }
   },
   "flex-layout.row#product-image": {
@@ -178,7 +201,7 @@
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0,
-      "blockClass": "col-product-info",
+      "blockClass": ["col-product-info","margenmob"],
       "width": "50%"
     },
     "children": [
@@ -254,7 +277,7 @@
     }
   },
   "flex-layout.col#buy-button": {
-    "children": ["add-to-cart-button"],
+    "children": ["add-to-cart-button#prod"],
     "props": {
       "width": "50%",
       "blockClass": "col-buyButton"
@@ -268,7 +291,7 @@
     }
   },
   "flex-layout.col#buy-button-tablet": {
-    "children": ["add-to-cart-button"],
+    "children": ["add-to-cart-button#prod"],
     "props": {
       "width": "50%",
       "blockClass": "col-buyButton"
@@ -300,24 +323,28 @@
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#prod"]
   },
+/*------------------------- Agregar Identificador y propiedad de agregar al carrito---------------*/
+  "add-to-cart-button#prod":{
+    "props":{
+      "onClic7kBehavior":"add-to-cart",
+      "text": "Agregar Al Carrito",
+      "unavailabeltext": "No Disponlible"
+    }
+  },
+
+/*------------------------- Agregar Identificador y propiedad de agregar al carrito---------------*/
 
   "share#default": {
     "props": {
       "social": {
         "Facebook": true,
         "WhatsApp": true,
-<<<<<<< HEAD
         "Twitter": false,
         "Pinterest": true
-      }
-    }
-  }
-=======
-        "Twitter": true,
-        "Pinterest": false
-      }
+      },
+      "blockClass": "share-icons"
     }
   },
   // --------------------------- Inicio Titulo Nuevos Productos ---------------------------
@@ -327,7 +354,7 @@
     "children":[
       "flex-layout.col#titshelf-producto"
     ],"props":{
-      "blockClass":"contenedortitulo",
+      "blockClass":["contenedortitulo","margen"],
       "horizontalAlign":"center"
     }
   },
@@ -351,7 +378,10 @@
 
   // --------------------------- inicio shelf Producots ------------------------------
   "flex-layout.row#shelf-producto": {
-    "children": ["list-context.product-list#demo1-producto"]
+    "children": ["list-context.product-list#demo1-producto"],
+    "props":{
+      "blockClass":"margen"
+    }
   },
   "list-context.product-list#demo1-producto": {
     "blocks": ["product-summary.shelf"],
@@ -365,14 +395,14 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows":false
     }
   }
   // --------------------------- fin shelf Producots ------------------------------
 
->>>>>>> 3a81041f0707cf731d02277e77042d86e2aec50b
 }
