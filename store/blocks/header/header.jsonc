@@ -75,6 +75,7 @@
       // "rich-text#contactanos-link",
       "login",
       // "flex-layout.col#account",
+      // "flex-layout.col#account",
       "flex-layout.col#wishlist",
       "flex-layout.col#carrito"
       // iconos de favoritos, mi cuenta y carrito
@@ -339,18 +340,18 @@
       "blockClass": "contactanos-link"
     }
   },
-  "flex-layout.col#account": {
-    "props": {
-      "verticalAlign": "middle",
-      "marginRight": 6
-    },
-    "children": [
-      "image#account-icon"
-    ]
-  },
+  // "flex-layout.col#account": {
+  //   "props": {
+  //     "verticalAlign": "middle",
+  //     "marginRight": 6
+  //   },
+  //   "children": [
+  //     "image#account-icon"
+  //   ]
+  // },
   "image#account-icon": {
       "props": {
-        "src": "/arquivos/account-icon.svg",
+        "src": "assets/account-icon.svg",
         // "maxHeight": 20,
         // "width": 20,
         "alt": "account-link-icon",
@@ -369,7 +370,7 @@
   },
   "image#wishlist-icon": {
       "props": {
-        "src": "/arquivos/wishlist-icon.svg",
+        "src": "assets/wishlist-icon.svg",
         // "maxHeight": 23,
         // "width": 23,
         "alt": "wishlist-link-icon",

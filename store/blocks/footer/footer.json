@@ -68,7 +68,7 @@
     "title":"Logo Footer",
     "props":{
       "height":100,
-      "src":"assets/logocw.png"
+      "src":"assets/coolwey-logo-full.svg"
     }
   },
   
@@ -97,7 +97,8 @@
       "blockClass":"rowsocialmedia",
       "marginTop": 5
     }
-  },"flex-layout.col#image1":{
+  },
+  "flex-layout.col#image1":{
     "children":[
       "image#tw"
     ],"props":{
@@ -139,7 +140,7 @@
     "title":"Imagen Instagram",
     "props":{
       "height":33,
-      "src":"assets/ig.png",
+      "src":"assets/best-instagram-icon.svg",
       "blockClass":"pb",
       "link":{
         "url":"https://www.instagram.com/coolweystore/",
@@ -152,7 +153,7 @@
     "title":"Imagen Facebook",
     "props":{
       "height":33,
-      "src":"assets/fb.png",
+      "src":"assets/best-facebook-icon.svg",
       "blockClass":"pb",
       "link":{
         "url":"https://www.facebook.com/CoolWeyStore",
@@ -206,17 +207,20 @@
       "paddingBottom": 4,
       "preserveLayoutOnMobile":true
     }
-  },"flex-layout.col#col1foomobile":{
+  },
+  "flex-layout.col#col1foomobile":{
     "children":[
       "vtex.menu@2.x:menu#col1",
       "flex-layout.row#powered"
 
-    ]},"flex-layout.col#col3foomobile":{
+    ]
+  },
+    "flex-layout.col#col3foomobile":{
     "children":[
       "vtex.menu@2.x:menu#col3",
       "flex-layout.row#sm"
-    ]},
-  
+    ]
+  },
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
