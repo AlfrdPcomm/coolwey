@@ -1,0 +1,80 @@
+{
+    "store.custom#terminos-y-condiciones": {
+      "blocks": [
+        "flex-layout.row#terminos-y-condiciones"
+      ]
+    },
+  
+    "flex-layout.row#terminos-y-condiciones": {
+      "children": [
+        "flex-layout.col#text-terminos-y-condiciones"
+      ],
+      "props": {
+        "fullWidth": false,
+        "horizontalAlign": "center"	
+        }
+    },
+    "flex-layout.col#text-terminos-y-condiciones": {
+      "children": [
+        "flex-layout.col#titlecol-terminos-y-condiciones",
+        "flex-layout.row#textrow-terminos-y-condiciones"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true,
+        "fullWidth": false
+      }
+    },
+    "flex-layout.row#textrow-terminos-y-condiciones": {
+        "children": [    
+            "flex-layout.col#textcol-terminos-y-condiciones"
+        ],
+        "props": {
+          "fullWidth": false,
+          "horizontalAlign": "center"	
+          }
+    },
+    "flex-layout.col#titlecol-terminos-y-condiciones": {
+        "children": [
+            "rich-text#title-terminos-y-condiciones"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "titlecol-institucional"
+        }
+    },
+    "rich-text#title-terminos-y-condiciones": {
+      "props": {
+        "text":
+        "# Terminos Y Condiciones",
+        "blockClass": ""
+      }
+    },
+    "flex-layout.col#textcol-terminos-y-condiciones": {
+        "children": [
+            "rich-text#terminos-y-condiciones",
+            "rich-text#terminos-y-condiciones2"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "textcol-institucional",
+            "paddingLeft": "3",
+            "paddingRight": "3"
+        }
+    },
+    "rich-text#terminos-y-condiciones": {
+      "props": {
+        "text": "## 1.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",        
+        "blockClass": "contenido-institucional"
+      }
+    },
+    "rich-text#terminos-y-condiciones2": {
+      "props": {
+        "text": "## 2.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",   
+        "blockClass": "contenido-institucional"
+    }
+    }
+  }
+  

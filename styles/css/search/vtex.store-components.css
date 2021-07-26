@@ -1,0 +1,196 @@
+/* global starts */
+:global(.vtex-toast) {
+  background-color: #ccff00;
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-toast) :global(.vtex-alert__close-icon) {
+  color: #252525;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.productBrandName--summaryListDesktop {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0067c7;
+  font-size: 0.875rem;
+}
+
+.productBrandName--summaryListMobile {
+  text-decoration: none;
+  color: #0067c7;
+  font-size: 0.875rem;
+}
+
+/*-------------------- Inicio Personalización Searc-result --------------------*/
+:global(.vtex-breadcrumb-1-x-homeIcon),
+:global(.vtex-breadcrumb-1-x-caretIcon) {
+  display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-homeLink)::before {
+  content: "Inicio";
+}
+
+:global(.vtex-breadcrumb-1-x-arrow--1)::before,
+:global(.vtex-breadcrumb-1-x-arrow--2)::before,
+:global(.vtex-breadcrumb-1-x-arrow--3)::before,
+:global(.vtex-breadcrumb-1-x-arrow--4)::before {
+  content: "/";
+}
+
+:global(.vtex-search-result-3-x-galleryTitle--layout) {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-family: "CenturyGothicBold";
+}
+
+:global(.vtex-search-result-3-x-filterMessage) {
+  font-size: 30px;
+  font-family: "CenturyGothicBold";
+}
+
+:global(.vtex-search-result-3-x-filterTitle) {
+  font-size: 20px;
+  font-family: "CenturyGothicBold" !important;
+  color: #000000 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterCol) {
+  background-color: #f8f8f8;
+  padding: 10px;
+  
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--filterCol){
+  min-width: 250px;
+}
+
+@media (min-width: 1025px) and (max-width: 1500px){
+  :global(.vtex-search-result-3-x-container--layout){
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+   /*--------------------Ajuste   PDP  -------------------------*/
+   :global(.vtex-flex-layout-0-x-flexRowContent--margen){
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  /*-------------------- Ajuste PDP ----------------------------*/
+}
+
+
+
+@media (max-width: 1024px) {
+ 
+
+  /*-------------- ajuste imagenes home ----------------------*/
+  :global(.vtex-store-components-3-x-imageElement--imgcats){
+    max-height: 164px !important;
+    max-width: 164px !important;
+  }
+
+  :global(.vtex-store-components-3-x-infoCardContainer--rowic){
+    height: 200px;
+  }
+
+
+  /*-------------- ajuste imagenes home ----------------------*/
+
+  /*-------------------- PLP -----------------------*/
+
+
+  :global(.vtex-search-result-3-x-filterPopupTitle){
+    font-size: 13px !important;
+  }
+
+  :global(.vtex-product-price-1-x-savings--summary){
+    padding-left: 0% !important;
+  }
+
+  /*-------------------- PLP -----------------------*/
+  :global(.vtex-search-result-3-x-filterBreadcrumbsItemName),
+  :global(.vtex-search-result-3-x-filterBreadcrumbsText),
+  :global(.vtex-search-result-3-x-galleryTitle--layout) {
+    font-size: 20px !important;
+    font-family: "CenturyGothicBold" !important;
+    color: #000000;
+  }
+
+  :global(.vtex-search-result-3-x-accordionFilterItemTitle) {
+    font-size: 14px;
+    font-family: "CenturyGothic";
+  }
+
+  :global(.vtex-search-result-3-x-orderByText) {
+    display: none;
+  }
+
+  :global(.vtex-search-result-3-x-filterPopupTitle) {
+    font-size: 10px;
+  }
+
+  :global(.vtex-search-result-3-x-filterIcon) {
+    width: 10px;
+  }
+
+  :global(.vtex-search-result-3-x-accordionFilterItemTag) :global(.vtex-tag) {
+    border-radius: 0% !important;
+    background-color: #ccff00;
+    color: #212165;
+  }
+
+  :global(.vtex__icon-check) {
+    background: #212165;
+  }
+
+  :global(.vtex-search-result-3-x-filterApplyButtonWrapper)
+    :global(.vtex-button) {
+    background-color: #ccff00;
+    border-radius: 75px;
+  }
+
+  :global(.vtex-search-result-3-x-filterApplyButtonWrapper)
+    :global(.vtex-button)
+    :global(.vtex-button__label) {
+    color: #212165;
+  }
+/*---------------- PDP-------------------*/
+:global(.vtex-flex-layout-0-x-flexRow--margen),
+:global(.vtex-flex-layout-0-x-flexCol--col-product-info),
+:global(.vtex-stack-layout-0-x-stackContainer--product),
+:global(.vtex-breadcrumb-1-x-container){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  :global(.vtex-store-components-3-x-productImageTag--main){
+    height: 394px !important;
+  }
+
+  :global(.vtex-store-components-3-x-productDescriptionTitle){
+    font-size: 16px !important;
+  }
+
+  
+
+  :global(.vtex-flex-layout-0-x-flexCol--col-buyButton){
+    padding-left: 15px;
+  }
+}
+:global(.vtex-store-components-3-x-productDescriptionText)
+    :global(.vtex-store-components-3-x-container)
+      :global(.vtex-store-components-3-x-content){
+        font-size: 14px !important;
+  }
+
+/*-------------------- Fin Personalización Searc-result --------------------*/
+:global(.vtex-stack-layout-0-x-stackItem){
+  width: 100%;
+}

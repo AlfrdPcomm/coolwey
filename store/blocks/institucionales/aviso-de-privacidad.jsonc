@@ -1,0 +1,79 @@
+{
+    "store.custom#aviso-de-privacidad": {
+      "blocks": [
+        "flex-layout.row#aviso-de-privacidad"
+      ]
+    },
+  
+    "flex-layout.row#aviso-de-privacidad": {
+      "children": [
+        "flex-layout.col#text-aviso-de-privacidad"
+      ],
+      "props": {
+        "fullWidth": false,
+        "horizontalAlign": "center"	
+        }
+    },
+    "flex-layout.col#text-aviso-de-privacidad": {
+      "children": [
+        "flex-layout.col#titlecol-aviso-de-privacidad",
+        "flex-layout.row#textrow-aviso-de-privacidad"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true,
+        "fullWidth": false
+      }
+    },
+    "flex-layout.row#textrow-aviso-de-privacidad": {
+        "children": [    
+            "flex-layout.col#textcol-aviso-de-privacidad"
+        ],
+        "props": {
+          "fullWidth": false,
+          "horizontalAlign": "center"	
+          }
+    },
+    "flex-layout.col#titlecol-aviso-de-privacidad": {
+        "children": [
+            "rich-text#title-aviso-de-privacidad"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "titlecol-institucional"
+        }
+    },
+    "rich-text#title-aviso-de-privacidad": {
+      "props": {
+        "text":
+        "# Aviso de privacidad",
+        "blockClass": ""
+      }
+    },
+    "flex-layout.col#textcol-aviso-de-privacidad": {
+        "children": [
+            "rich-text#aviso-de-privacidad",
+            "rich-text#aviso-de-privacidad2"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "textcol-institucional",
+            "paddingLeft": "3",
+            "paddingRight": "3"
+        }
+    },
+    "rich-text#aviso-de-privacidad": {
+      "props": {
+        "text": "## 1.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",        
+        "blockClass": "contenido-institucional"
+      }
+    },
+    "rich-text#aviso-de-privacidad2": {
+      "props": {
+        "text": "## 2.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",   
+        "blockClass": "contenido-institucional"
+    }
+    }
+  }

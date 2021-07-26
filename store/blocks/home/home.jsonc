@@ -1,0 +1,634 @@
+{
+  "store.home": {
+    "blocks": [      
+      "list-context.image-list#demo", //Slider Principal
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",     
+      "flex-layout.row#sldcategorias", //Slider de categorias 
+      "flex-layout.row#tituloshelf", // Titulo nuevos productos
+      "flex-layout.row#shelf",
+      "flex-layout.row#info-cards", //Espacio de infocards
+      "flex-layout.row#tituloshelf2", // Titulo Hot Sale
+      "flex-layout.row#shelfhs", // Shelf hot sale
+      "flex-layout.row#marcas", //Slider de Marcas
+      "flex-layout.row#tituloshelf3", //Titulo shelf nuevos productos 2
+      "flex-layout.row#shelfnp2", // Shelf nuevos producots 2
+      "flex-layout.row#infocardesc", //Infocard descuentos
+      "flex-layout.row#deals", //Solo se modifican imagenes y textos en el archivo deals
+      "flex-layout.row#news", // Apartado newsletter
+      "back-to-top-button"
+    ]
+  },
+
+
+  //-------------------------- Inicio Slider Principal ------------------------------
+  "list-context.image-list#demo": {
+    "title":"Slider Principal",
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 520,
+      "images": [
+        {
+          "image": "assets/sliderprin.png",
+          "mobileImage": "assets/sldresp.png"
+        },
+        {
+          "image": "assets/sliderprin.png",
+          "mobileImage": "assets/sldresp.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth":true
+    }
+  },
+
+  //-------------- Fin  Slider principal -----------------------------------------------
+  // --------------------------- Inicio slider categorias -------------------------------
+
+  "flex-layout.row#sldcategorias":{
+    "title":"Slider Categorías",
+    "children":[
+      "slider-layout#slidercategorias"
+    ],"props":{
+      "blockClass":"sldcatscontenedor",
+      "marginTop": 8
+    }
+  },"slider-layout#slidercategorias":{
+    "title":"Contenido Slider Cats",
+    "props":{
+      "itemsPerPage":{
+        "desktop": 5,
+        "tablet": 3,
+        "phone":2
+      },
+      "infinite":true,
+      "showNavigationArrows":"never",
+      "blockClass":"contenidosldcats"
+    },"children":[
+      "flex-layout.col#cat1",
+      "flex-layout.col#cat2",
+      "flex-layout.col#cat3",
+      "flex-layout.col#cat4",
+      "flex-layout.col#cat5"
+    ]
+  },"flex-layout.col#cat1":{
+    "title": "Categoría 1",
+    "children":[
+      "image#cat1",
+      "rich-text#cat1"
+    ],"props":{
+      "horizontalAlign":"center",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },"image#cat1":{
+    "title":"Imagen cat1",
+    "props":{
+      "height":218,
+      "src":"assets/teni.png",
+      "link":{
+        "url":"/"
+      },
+      "blockClass":"imgcats"
+    }
+  },"rich-text#cat1":{
+    "title":"Texto cat 1",
+    "props":{
+      "text":"MUJER",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+  
+  "flex-layout.col#cat2":{
+    "title": "Categoría 2",
+    "children":[
+      "image#cat2",
+      "rich-text#cat2"
+    ],"props":{
+      "horizontalAlign":"center",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },"image#cat2":{
+    "title":"Imagen cat2",
+    "props":{
+      "height":218,
+      "src":"assets/teni.png",
+      "link":{
+        "url":"/"
+      },
+      "blockClass":"imgcats"
+    }
+  },"rich-text#cat2":{
+    "title":"Texto cat 2",
+    "props":{
+      "text":"HOMBRE",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+
+  "flex-layout.col#cat3":{
+    "title": "Categoría 3",
+    "children":[
+      "image#cat3",
+      "rich-text#cat3"
+    ],"props":{
+      "horizontalAlign":"center",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },"image#cat3":{
+    "title":"Imagen cat3",
+    "props":{
+      "height":218,
+      "src":"assets/teni.png",
+      "link":{
+        "url":"/"
+      },
+      "blockClass":"imgcats"
+    }
+  },"rich-text#cat3":{
+    "title":"Texto cat 3",
+    "props":{
+      "text":"GADGETS",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },"flex-layout.col#cat4":{
+    "title": "Categoría 4",
+    "children":[
+      "image#cat4",
+      "rich-text#cat4"
+    ],"props":{
+      "horizontalAlign":"center",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },"image#cat4":{
+    "title":"Imagen cat4",
+    "props":{
+      "height":218,
+      "src":"assets/teni.png",
+      "link":{
+        "url":"/"
+      },
+      "blockClass":"imgcats"
+    }
+  },"rich-text#cat4":{
+    "title":"Texto cat 4",
+    "props":{
+      "text":"DEPORTES",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+  
+  
+  
+  "flex-layout.col#cat5":{
+    "title": "Categoría 5",
+    "children":[
+      "image#cat5",
+      "rich-text#cat5"
+    ],"props":{
+      "horizontalAlign":"center",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },"image#cat5":{
+    "title":"Imagen cat5",
+    "props":{
+      "height":218,
+      "src":"assets/teni.png",
+      "link":{
+        "url":"/"
+      },
+      "blockClass":"imgcats"
+    }
+  },"rich-text#cat5":{
+    "title":"Texto cat 5",
+    "props":{
+      "text":"COSMÉTICOS",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+
+
+  // --------------------------- Fin slider categorias -------------------------------
+  // --------------------------- Inicio Titulo Nuevos Productos ---------------------------
+
+  "flex-layout.row#tituloshelf":{
+    "title":"Título Shelf",
+    "children":[
+      "flex-layout.col#titshelf"
+    ],"props":{
+      "blockClass":"contenedortitulo",
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#titshelf":{
+    "children":[
+      "rich-text#tituloshelf"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#tituloshelf":{
+    "title":"Texto título Shelf",
+    "props":{
+      "text":"Nuevos Productos",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+  // --------------------------- Fin Titulo Nuevos Producots ------------------------------
+
+  // --------------------------- Inicio Row Info-cards ------------------------------------
+
+  "flex-layout.row#info-cards":{
+    "title": "Contenedor Info-cards",
+    "children":[
+      "flex-layout.col#infoizq",
+      "flex-layout.col#infoder"
+    ],"props":{
+      "blockClass":"contenedorinfos"
+    }
+  },"flex-layout.col#infoizq":{
+    "title":"Contenedor Izquierda",
+    "children":[
+      "info-card#izquierda"
+    ],"props":{
+      "blockClass":"colinfo",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },
+  "info-card#izquierda":{
+    "title":"Infocard Izquierda",
+    "props":{
+      "id": "info-card-izquierda",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/infocardbg.png",
+      "headline": "100% RUNNERS",
+      "callToActionText": "VER PRODUCTOS",
+      "callToActionUrl": "/runner",
+      "blockClass": "rowic",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.col#infoder":{
+    "title":"Contenedor Derecha",
+    "children":[
+      "info-card#derecha"
+    ],"props":{
+      "blockClass":"colinfo",
+      "paddingLeft":5,
+      "paddingRight": 5
+    }
+  },
+
+  "info-card#derecha":{
+    "title":"Info-card Derecha",
+    "props":{
+      "id": "info-card-derecha",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/infocardbg.png",
+      "headline": "100% RUNNERS",
+      "callToActionText": "VER PRODUCTOS",
+      "callToActionUrl": "/runner",
+      "blockClass": "rowic",
+      "textAlignment": "center"
+    }
+  },
+
+
+  // --------------------------- Fin Row Info-cards ---------------------------------------
+
+  // --------------------------- Inicio Titulo Hot Sale ---------------------------
+
+  "flex-layout.row#tituloshelf2":{
+    "title":"Título Hot Sale",
+    "children":[
+      "flex-layout.col#tiths"
+    ],"props":{
+      "blockClass":"contenedortitulo",
+      "horizontalAlign":"center",
+      "marginTop": 8
+    }
+  },"flex-layout.col#tiths":{
+    "children":[
+      "rich-text#titulohs"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+
+  "rich-text#titulohs":{
+    "title":"Texto título Hot Sale",
+    "props":{
+      "text":"Hot Sale",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+  // --------------------------- Fin Titulo Hot Sale ------------------------------
+  // --------------------------- Inicio Shelf Hot Sale ----------------------------
+
+  "flex-layout.row#shelfhs":{
+    "children":[
+      "list-context.product-list#shelfhs"
+    ]
+  },
+
+  "list-context.product-list#shelfhs": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelfhs"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelfhs": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows":"desktopOnly",
+      "showPaginationDots":"mobileOnly"
+    }
+  },
+
+
+  // --------------------------- Fin Shelf Hot Sale -------------------------------
+
+  // --------------------------- Inicio Row Marcas --------------------------------
+
+  "flex-layout.row#marcas":{
+    "title":"Row Slider Marcas",
+    "children":[
+      "slider-layout#marcas"
+    ],
+    "props":{
+      "marginTop":8,
+      "marginBottom": 8,
+      "blockClass": "marcas"
+    }
+  },
+  "slider-layout#marcas":{
+    "title": "Slider Marcas",
+    "props":{
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 5,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "marcas",
+      "showPaginationDots":"desktopOnly",
+      "showNavigationArrows": "desktopOnly"
+      // "autoplay": {
+      //   "timeout": 2000,
+      //   "stopOnHover": true
+      // }
+    },
+    "children":[
+      "image#marca1",
+      "image#marca2",
+      "image#marca3",
+      "image#marca4",
+      "image#marca5",
+      "image#marca6",
+      "image#marca7"
+    ]
+  },
+  "image#marca1":{
+    "props":{
+      "height":47,
+      "src":"assets/adidas.png"
+    }
+  },
+  "image#marca2":{
+    "props":{
+      "height": 18,
+      "src":"assets/garmin.png"
+    }
+  },
+  "image#marca3":{
+    "props":{
+      "height": 34,
+      "src":"assets/puma.png"
+    }
+  },
+  "image#marca4":{
+    "props":{
+      "height": 25,
+      "src":"assets/nike.png"
+    }
+  },
+  "image#marca5":{
+    "props":{
+      "height": 23,
+      "src":"assets/fila.png"
+    }
+  },
+  "image#marca6":{
+    "props":{
+      "height": 14,
+      "src":"assets/joma.png"
+    }
+  },
+  "image#marca7":{
+    "props":{
+      "height":41,
+      "src":"assets/under.png"
+    }
+  },
+
+
+  // --------------------------- Fin Row Marcas -----------------------------------
+  // --------------------------- Inicio Titulo Nuevos Productos  2---------------------------
+
+  "flex-layout.row#tituloshelf3":{
+    "title":"Título Shelf",
+    "children":[
+      "flex-layout.col#titshelf3"
+    ],"props":{
+      "blockClass":"contenedortitulo",
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#titshelf3":{
+    "children":[
+      "rich-text#tituloshelf3"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+
+  "rich-text#tituloshelf3":{
+    "title":"Texto título Shelf",
+    "props":{
+      "text":"Nuevos Productos",
+      "textAlignment":"center",
+      "textPosition":"center"
+    }
+  },
+  // --------------------------- Fin Titulo Nuevos Producots 2 ------------------------------
+   // --------------------------- Inicio Shelf Nuevos productos 2 ----------------------------
+
+   "flex-layout.row#shelfnp2":{
+    "children":[
+      "list-context.product-list#shelfnp2"
+    ]
+  },
+
+  "list-context.product-list#shelfnp2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelfnp2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelfnp2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows":"desktopOnly",
+      "showPaginationDots":"mobileOnly"
+    }
+  },
+
+
+  // --------------------------- Fin Shelf nuevos productos 2 -------------------------------
+  // --------------------------- Inicio info-card descuentos --------------------------------
+
+  "flex-layout.row#infocardesc":{
+    "children":[
+      "info-card#desc"
+    ]
+  },
+
+
+  "info-card#desc":{
+    "title":"Info-card Descuentos",
+    "props":{
+      "id": "info-card-desc",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/icdesc.png",
+      "headline": "HASTA 50% OFF",
+      "callToActionText": "VER PRODUCTOS",
+      "callToActionUrl": "/runner",
+      "blockClass": ["rowic", "rowic-descuentos"],
+      "textAlignment": "center"
+    }
+  },
+
+
+
+  // --------------------------- Fin info-card descuentos -----------------------------------
+
+  // --------------------------- Inicio  Newsletter -----------------------------------------
+  "flex-layout.row#news":{
+    "title":"Row Newsletter",
+    "children":[
+      "flex-layout.col#contnews"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "marginTop":8,
+      "marginBottom":8,
+      "blockClass": "newsLetter"
+    }
+  },
+  "flex-layout.col#contnews":{
+    "title":"Coontendor Newsletter",
+    "children":[
+      "rich-text#titnews",
+      "rich-text#textnews",
+      "newsletter"
+    ],
+    "props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#titnews":{
+    "title":"Titulo Newsletter",
+    "props":{
+      "text":"Suscríbete al Newsletter",
+      "blockClass":"titnews"
+    }
+  },
+  "rich-text#textnews":{
+    "title":"Texto Newsletter",
+    "props":{
+      "text":"Registrate y recibe un cupón de 10% de descuento, aplican restricciones",
+      "blockClass":"textnews"
+    }
+  },
+  
+  "newsletter":{
+    "props":{
+      "label":"",
+      "placeholder": "E-mail"
+    }
+  },
+  // --------------------------- Fin Newsletter ---------------------------------------------
+  
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows":"desktopOnly",
+      "showPaginationDots":"mobileOnly"
+    }
+  },
+  "back-to-top-button":{
+    "props":{
+      "display":"caret-icon"
+    }
+  }
+}

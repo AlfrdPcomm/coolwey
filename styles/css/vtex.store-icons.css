@@ -1,0 +1,39 @@
+.expandIcon {
+  color: #727273;
+}
+:global(.vtex-store-components-3-x-shareSocialIcon):first-child {
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+  :global(.vtex-store-components-3-x-shareSocialButton):first-child::before {
+  content: " ";
+  display: block;
+  height: 19.14px;
+  width: 19.14px;
+  background-size: 19.14px 19.14px;
+  background-image: url("assets/best-facebook-icon.svg");
+  background-repeat: no-repeat;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+  :global(.vtex-store-components-3-x-shareSocialButton):not(:first-child)::before {
+  content: " ";
+  display: block;
+  height: 19.14px;
+  width: 19.14px;
+  background-size: 19.14px 19.14px;
+  background-image: url("assets/whatsapp-icon.svg");
+  background-repeat: no-repeat;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+  :global(.vtex-store-components-3-x-shareSocialButton):last-child::before {
+  content: " ";
+  display: block;
+  height: 19.14px;
+  width: 19.14px;
+  background-size: 19.14px 19.14px;
+  background-image: url("assets/best-instagram-icon.svg");
+  background-repeat: no-repeat;
+}

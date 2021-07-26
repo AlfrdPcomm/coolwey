@@ -1,0 +1,160 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+/* ----------------------- Inicio Personalización Footer ---------------------*/
+/* :global(.vtex-flex-layout-0-x-flexColChild--colfooter3)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  justify-content: flex-end;
+  font-weight: bold;
+} */
+
+/* :global(.vtex-menu-2-x-menuContainer--menucol1)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+} */
+:global(.vtex-flex-layout-0-x-flexColChild--colfooter)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colfooter3)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colfooter3) {
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--credits) {
+  margin-top: 25px;
+  border-top: 1px solid #ccff00;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--footer) {
+  color: #212165;
+  font-size: 12px;
+  font-family: CenturyGothicRegular;
+}
+:global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile-formas)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #252525;
+  font-family: CenturyGothicBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+:global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile-formas)
+  :global(.vtex-menu-2-x-styledLinkContainer) {
+  display: flex;
+  justify-content: flex-end;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colfooter3)
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowsocialmedia) {
+  padding-left: 100px;
+}
+/* ----------------------- Fin Personalización Footer ---------------------*/
+/*-------------------------------   Inicio responsive   -------------------------------------*/
+@media (max-width: 640px) {
+  :global(.vtex-store-components-3-x-imageElement--pb) {
+    height: 25px !important;
+  }
+  :global(.vtex-menu-2-x-menuContainer--menucol1)
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    margin-left: 0px !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowpowered)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    justify-content: flex-start !important;
+    width: auto !important;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--pbpc) {
+    padding-left: 10px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--credits) {
+    margin-top: 15px;
+  }
+
+  :global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile)
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    margin-left: 10px;
+  }
+  :global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile)
+    :global(.vtex-menu-2-x-styledLinkContent) {
+    color: rgba(37, 37, 37, 0.5);
+    font-family: CenturyGothicRegular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+  :global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile-formas)
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    display: flex;
+    justify-content: flex-start;
+  }
+  :global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile-formas)
+    :global(.vtex-menu-2-x-styledLinkContainer) {
+    margin-left: 5px;
+  }
+  :global(.vtex-menu-2-x-menuContainerNav--footer-menu-mobile-formas)
+    :global(.vtex-menu-2-x-styledLinkContent) {
+    color: rgba(37, 37, 37, 0.5);
+    font-family: CenturyGothicRegular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--titleWishlist) {
+    padding-left: 10px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowsocialmedia) {
+    /* padding-left: 111px; */
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowpowered) {
+    padding-left: 10px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--payment-methods)
+    :global(.vtex-flex-layout-0-x-flexColChild) {
+    display: flex;
+    justify-content: center;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--rowsocialmedia) {
+    width: 100%;
+  }
+}
+/*-------------------------------   Inicio responsive   -------------------------------------*/

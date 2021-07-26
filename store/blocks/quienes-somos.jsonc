@@ -1,0 +1,116 @@
+{
+    "store.custom#quienes-somos": {
+      "children": [
+        "flex-layout.row#quienesomos"
+      ]
+    },
+    "flex-layout.row#quienesomos": {
+        "props": {
+          "blockClass": "faq",
+          "horizontalAlign":"center",
+          "fullWidth":true
+        },
+        "children": [
+          "flex-layout.col#faq"
+        ]
+      },
+    
+      "flex-layout.col#faq": {
+        "children": [
+          "rich-text#somos",
+          "flex-layout.row#logo-texto",
+          "flex-layout.row#columnasinfo"          
+        ],
+        "props": {
+            "width": "90%",
+            "horizontalAlign": "center",
+            "blockClass": "titlecol-institucional"
+        }
+      }, "rich-text#somos":{
+        "props":{
+          "text":"¿QUIÉNES SOMOS?",
+          "blockClass":"titulofaqs"
+        }    
+      },"flex-layout.row#logo-texto":{
+          "children":[
+              "flex-layout.col#imagelogo",
+              "flex-layout.col#textquienes"
+          ]
+      },"flex-layout.col#imagelogo":{
+          "children":[
+              "image#logosomos"
+          ],"props":{
+              "width":"35%",
+              "verticalAlign":"middle",
+              "horizontalAlign":"center"
+          }
+      },
+      "image#logosomos":{
+          "props":{
+              "height":70,
+              "src":"assets/logocw.png"
+          }
+      },
+
+      "flex-layout.col#textquienes":{
+          "children":[
+              "rich-text#contquienes"
+          ],"props":{
+            "width":"65%",
+            "verticalAlign":"middle"
+        }
+      },
+      "rich-text#contquienes":{
+        "props":{
+            "text":"Coolwey.com  es operada por Comercializadora y Distribuidora OGR, S.A.P.I. de C.V., domiciliada en la Ciudad de México y enfocada a comercializar artículos deportivos de las mejores marcas a través de una tienda en línea (e-commerce)",
+            "blockClass":"textcontentnosotros"
+        }
+      },
+      "flex-layout.row#columnasinfo":{
+          "children":[
+              "flex-layout.col#mision",
+              "flex-layout.col#vision",
+              "flex-layout.col#valores"
+          ],"props":{
+            "horizontalAlign":"center",
+            "marginTop":8
+          }
+      },
+
+      "flex-layout.col#mision":{
+          "children":[
+              "rich-text#mision"
+          ],"props":{
+              "blockClass":"colinst"
+          }
+      },"rich-text#mision":{
+          "props":{
+              "text":"##### Misión \n- Ser la mejor opción para nuestros clientes, ofreciéndoles la mejor experiencia de compra en líne@, superando sus expectativas.  \n- Accesibilidad y disponibilidad.  \n- Diversidad de productos."
+          }
+      },
+      "flex-layout.col#vision":{
+        "children":[
+            "rich-text#vision"
+        ],"props":{
+            "blockClass":"colinst",
+            "horizontalAlign":"center"
+        }
+    },
+    "rich-text#vision":{
+        "props":{
+            "text":"##### Visión \n- Ser la plataforma de comercio electrónico líder en México, distinguiéndose por ofrecer productos de las más prestigiadas marcas nacionales e internacionales.  \n- El cliente es lo más importante para nosotros.  \n- Productos seleccionados."
+        }
+    },
+    
+    "flex-layout.col#valores":{
+        "children":[
+            "rich-text#valores"
+        ],"props":{
+            "blockClass":"colinst"
+        }
+    },"rich-text#valores":{
+        "props":{
+            "text":"###### Valores \n- Servicio \n- Calidad \n- Precio \n- Confianza"
+        }
+    }
+}

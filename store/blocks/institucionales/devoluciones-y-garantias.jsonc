@@ -1,0 +1,79 @@
+{
+    "store.custom#devoluciones-y-garantias": {
+      "blocks": [
+        "flex-layout.row#devoluciones-y-garantias"
+      ]
+    },
+  
+    "flex-layout.row#devoluciones-y-garantias": {
+      "children": [
+        "flex-layout.col#text-devoluciones-y-garantias"
+      ],
+      "props": {
+        "fullWidth": false,
+        "horizontalAlign": "center"	
+        }
+    },
+    "flex-layout.col#text-devoluciones-y-garantias": {
+      "children": [
+        "flex-layout.col#titlecol-devoluciones-y-garantias",
+        "flex-layout.row#textrow-devoluciones-y-garantias"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true,
+        "fullWidth": false
+      }
+    },
+    "flex-layout.row#textrow-devoluciones-y-garantias": {
+        "children": [    
+            "flex-layout.col#textcol-devoluciones-y-garantias"
+        ],
+        "props": {
+          "fullWidth": false,
+          "horizontalAlign": "center"	
+          }
+    },
+    "flex-layout.col#titlecol-devoluciones-y-garantias": {
+        "children": [
+            "rich-text#title-devoluciones-y-garantias"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "titlecol-institucional"
+        }
+    },
+    "rich-text#title-devoluciones-y-garantias": {
+      "props": {
+        "text":
+        "# Devoluciones Y Garantias",
+        "blockClass": ""
+      }
+    },
+    "flex-layout.col#textcol-devoluciones-y-garantias": {
+        "children": [
+            "rich-text#devoluciones-y-garantias",
+            "rich-text#devoluciones-y-garantias2"
+        ],
+        "props": {
+            "width": "80%",
+            "horizontalAlign": "center",
+            "blockClass": "textcol-institucional",
+            "paddingLeft": "3",
+            "paddingRight": "3"
+        }
+    },
+    "rich-text#devoluciones-y-garantias": {
+      "props": {
+        "text": "## 1.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",        
+        "blockClass": "contenido-institucional"
+      }
+    },
+    "rich-text#devoluciones-y-garantias2": {
+      "props": {
+        "text": "## 2.Muestra título medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet. \n Parráfo muestra medidas, grosor, tamaño de fuente, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",   
+        "blockClass": "contenido-institucional"
+    }
+    }
+  }

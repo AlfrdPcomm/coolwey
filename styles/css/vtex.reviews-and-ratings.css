@@ -1,0 +1,19 @@
+.container {
+  max-width: 96rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.inlineContainer {
+  margin-left: 0rem;
+}
+
+.star--filled {
+  color: #ffb100;
+}
+
+.star--empty {
+  color: #ffb100;
+}

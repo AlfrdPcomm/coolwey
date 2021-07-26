@@ -1,0 +1,164 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "flex-layout.row#faq"
+    ]
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq",
+      "horizontalAlign":"center",
+      "fullWidth":true
+    },
+    "children": [
+      "flex-layout.col#faq"
+    ]
+  },
+
+  "flex-layout.col#faq": {
+    "children": [
+      "rich-text#faq",
+      "vtex.menu@2.x:menu#menufaqs"
+      
+    ],
+    "props": {
+        "width": "90%",
+        "horizontalAlign": "center",
+        "blockClass": "titlecol-institucional"
+    }
+  },
+  
+  "vtex.menu@2.x:menu#menufaqs":{
+    "children":[
+      "menu-item#compras",
+      "menu-item#ordenes",
+      "menu-item#envio"
+    ],
+    "props":{
+      "orientation":"vertical"
+    }
+  },
+  "rich-text#faq":{
+    "props":{
+      "text":"FAQ´S",
+      "blockClass":"titulofaqs"
+    }    
+  },
+
+  //-------------------Menu compras------------
+  "menu-item#compras": {
+    "props": {
+      "blockClass":"titmeinst",
+      "id": "faq-compras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "COMPRAS",
+        "text": "COMPRAS"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#compras"]
+  },
+  "vtex.menu@2.x:submenu.accordion#compras": {
+    "children": ["vtex.menu@2.x:menu#compras-accordion"],
+    "props":{
+      "width":"100%"
+    }
+  },
+
+  "vtex.menu@2.x:menu#compras-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#contcompras"
+    ]
+  },"rich-text#contcompras":{
+    "props":{
+      "blockClass":"contfaqinst",
+      "text":"#### 1. Pasos para realizar una compra en coolwey.com \n - **Busca** en nuestro catalogo en línea lo que más te guste, encontrarás tenis, ropa y accesorios por marca,  actividad deportiva, género y estilo. - **Agrega** a tu carrito lo que deseas comprar."
+    }
+  },
+
+   //-------------------Menu ordenes------------
+   "menu-item#ordenes": {
+    "props": {
+      "blockClass":"titmeinst",
+      "id": "faq-ordenes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ORDENES",
+        "text": "ORDENES"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ordenes"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ordenes": {
+    "children": ["vtex.menu@2.x:menu#ordenes-accordion"],
+    "props":{
+      "width":"100%"
+    }
+  },
+
+  "vtex.menu@2.x:menu#ordenes-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "width":"100%"
+    },
+    "children": [
+      "rich-text#ordenes"
+    ]
+  },"rich-text#ordenes":{
+    "props":{
+      "blockClass":"contfaqinst",
+      "text":"#### 1. Pasos para realizar una compra en coolwey.com \n - **Busca** en nuestro catalogo en línea lo que más te guste, encontrarás tenis, ropa y accesorios por marca,  actividad deportiva, género y estilo. - **Agrega** a tu carrito lo que deseas comprar."
+    }
+  },
+
+  //-------------------Menu Envío ---------------
+  "menu-item#envio": {
+    "props": {
+      "blockClass":"titmeinst",
+      "id": "faq-envio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ENVÍO Y ENTREGA",
+        "text": "ENVÍO Y ENTREGA"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#envio"]
+  },
+  "vtex.menu@2.x:submenu.accordion#envio": {
+    "children": ["vtex.menu@2.x:menu#envio-accordion"],
+    "props":{
+      "width":"100%"
+    }
+  },
+
+  "vtex.menu@2.x:menu#envio-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#envio"
+    ]
+  },
+  "rich-text#envio":{
+    "props":{
+      "blockClass":"contfaqinst",
+      "text":"#### 1. Pasos para realizar una compra en coolwey.com \n - **Busca** en nuestro catalogo en línea lo que más te guste, encontrarás tenis, ropa y accesorios por marca,  actividad deportiva, género y estilo. - **Agrega** a tu carrito lo que deseas comprar."
+    }
+  }
+}
