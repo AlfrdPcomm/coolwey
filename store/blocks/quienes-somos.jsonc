@@ -11,11 +11,11 @@
           "fullWidth":true
         },
         "children": [
-          "flex-layout.col#faq"
+          "flex-layout.col#colsomos"
         ]
       },
     
-      "flex-layout.col#faq": {
+      "flex-layout.col#colsomos": {
         "children": [
           "rich-text#somos",
           "flex-layout.row#logo-texto",
