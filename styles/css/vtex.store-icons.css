@@ -9,31 +9,31 @@
   :global(.vtex-store-components-3-x-shareSocialButton):first-child::before {
   content: " ";
   display: block;
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/best-facebook-icon.svg");
+  height: 25.14px;
+  width: 25.14px;
+  background-size: 21px 21px;
   background-repeat: no-repeat;
+  background-image: url("assets/cool-facebook-icon.png");
 }
 
 :global(.vtex-store-components-3-x-shareContainer)
   :global(.vtex-store-components-3-x-shareSocialButton):not(:first-child)::before {
   content: " ";
   display: block;
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/whatsapp-icon.svg");
+  height: 25.14px;
+  width: 25.14px;
+  background-size: 21px 21px;
   background-repeat: no-repeat;
+  background-image: url("assets/cool-whatsapp-icon.png");
 }
 
 :global(.vtex-store-components-3-x-shareContainer)
   :global(.vtex-store-components-3-x-shareSocialButton):last-child::before {
   content: " ";
   display: block;
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/best-instagram-icon.svg");
+  height: 25.14px;
+  width: 25.14px;
+  background-size: 21px 21px;
   background-repeat: no-repeat;
+  background-image: url("assets/cool-pinterest-icon.png");
 }

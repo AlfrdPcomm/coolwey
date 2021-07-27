@@ -287,7 +287,7 @@
   display: none;
 }
 :global(.vtex-product-list-0-x-removeButton)::before {
-  content: url(/arquivos/delete-item-icon.png);
+  content: url(assets/cool-delete-icon.svg);
 }
 :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
   color: #252525;

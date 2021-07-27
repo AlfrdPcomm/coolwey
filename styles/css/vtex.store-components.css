@@ -508,6 +508,13 @@
 :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
   border: 0;
 }
+:global(.vtex-store-components-3-x-skuSelectorItem) {
+  box-sizing: border-box;
+  height: 32px;
+  width: 64px;
+  border: 2px solid #212165;
+  border-radius: 3px;
+}
 :global(.vtex-store-components-3-x-skuSelectorItem--m) {
   box-sizing: border-box;
   height: 32px;
@@ -866,7 +873,9 @@
 /*----------------------------- Institucionales Ends ---------------------------*/
 
 /*######################### Estilos Mi Cuenta #################################*/
-
+:global(.vtex-my-orders-app-3-x-orderHeader) {
+  font-family: CenturyGothicBold;
+}
 :global(.vtex-account_menu-link) {
   color: #212165;
   font-family: CenturyGothicRegular;
