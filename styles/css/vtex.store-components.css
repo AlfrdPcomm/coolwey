@@ -508,8 +508,7 @@
 :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
   border: 0;
 }
-<<<<<<< HEAD
-=======
+
 :global(.vtex-store-components-3-x-skuSelectorItem) {
   box-sizing: border-box;
   height: 32px;
@@ -517,7 +516,6 @@
   border: 2px solid #212165;
   border-radius: 3px;
 }
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 :global(.vtex-store-components-3-x-skuSelectorItem--m) {
   box-sizing: border-box;
   height: 32px;
@@ -730,11 +728,7 @@
 :global(.vtex-store-components-3-x-productDescriptionTitle) {
   color: #252525;
   font-family: CenturyGothicBold;
-<<<<<<< HEAD
   font-size: 16px;
-=======
-  font-size: 14px;
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
   font-weight: bold;
   letter-spacing: 0;
   line-height: 17px;
@@ -880,13 +874,10 @@
 /*----------------------------- Institucionales Ends ---------------------------*/
 
 /*######################### Estilos Mi Cuenta #################################*/
-<<<<<<< HEAD
 
-=======
 :global(.vtex-my-orders-app-3-x-orderHeader) {
   font-family: CenturyGothicBold;
 }
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 :global(.vtex-account_menu-link) {
   color: #212165;
   font-family: CenturyGothicRegular;
@@ -1162,7 +1153,6 @@
     padding: 0px 5px;
   }
 }
-<<<<<<< HEAD
 
 /*----------------- Menu página Institucional ------------------------*/
 :global(.vtex-rich-text-0-x-paragraph--titulofaqs){
@@ -1222,5 +1212,4 @@
 }
 
 /*----------------- Menu página Institucional ------------------------*/
-=======
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
+

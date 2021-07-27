@@ -9,55 +9,31 @@
   :global(.vtex-store-components-3-x-shareSocialButton):first-child::before {
   content: " ";
   display: block;
-<<<<<<< HEAD
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/best-facebook-icon.svg");
-  background-repeat: no-repeat;
-=======
   height: 25.14px;
   width: 25.14px;
   background-size: 21px 21px;
   background-repeat: no-repeat;
   background-image: url("assets/cool-facebook-icon.png");
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }
 
 :global(.vtex-store-components-3-x-shareContainer)
   :global(.vtex-store-components-3-x-shareSocialButton):not(:first-child)::before {
   content: " ";
   display: block;
-<<<<<<< HEAD
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/whatsapp-icon.svg");
-  background-repeat: no-repeat;
-=======
   height: 25.14px;
   width: 25.14px;
   background-size: 21px 21px;
   background-repeat: no-repeat;
   background-image: url("assets/cool-whatsapp-icon.png");
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }
 
 :global(.vtex-store-components-3-x-shareContainer)
   :global(.vtex-store-components-3-x-shareSocialButton):last-child::before {
   content: " ";
   display: block;
-<<<<<<< HEAD
-  height: 19.14px;
-  width: 19.14px;
-  background-size: 19.14px 19.14px;
-  background-image: url("assets/best-instagram-icon.svg");
-  background-repeat: no-repeat;
-=======
   height: 25.14px;
   width: 25.14px;
   background-size: 21px 21px;
   background-repeat: no-repeat;
   background-image: url("assets/cool-pinterest-icon.png");
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }

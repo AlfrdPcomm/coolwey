@@ -1,26 +1,18 @@
 {
   "product-summary.shelf": {
     "children": [
-<<<<<<< HEAD
       //"flex-layout.row#buttton-wish",
       "stack-layout#prodsum",
       "vtex.product-highlights@2.x:product-highlights#collection",
-=======
-      "flex-layout.row#buttton-wish",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "stack-layout#prodsum",
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
+
       "product-summary-name",
       "product-summary-brand",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-<<<<<<< HEAD
       //"product-installments#summary",
-=======
-      "product-installments#summary",
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
+
       "flex-layout.row#row-add-btn"
       // "add-to-cart-button"
       
@@ -36,12 +28,9 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-<<<<<<< HEAD
       "add-to-list-btn"
       
-=======
-      "vtex.product-highlights@2.x:product-highlights#collection"
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
+
       // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
@@ -131,7 +120,6 @@
         "add-to-cart-button"
       ],
     "props":{
-<<<<<<< HEAD
       "blockClass": "row-add-btn-cart"      
     }
   },
@@ -139,9 +127,6 @@
     "props":{
       "text": "VER PRODCUTO",
       "onClickBehavior":"go-to-product-page"
-=======
-      "blockClass": "row-add-btn-cart"
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     }
   }
 }

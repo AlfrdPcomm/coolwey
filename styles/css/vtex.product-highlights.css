@@ -1,5 +1,4 @@
 .productHighlightWrapper--collection {
-<<<<<<< HEAD
   /*position: absolute;*/
   /*top: 10px;*/
   /*left: 5px;*/
@@ -11,16 +10,4 @@
   border-radius: 3px;
   padding: 2px 5px;
   color: #ffffff;
-=======
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 200px;
-}
-
-.productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
-  padding: 5px 10px;
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }

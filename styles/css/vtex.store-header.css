@@ -287,11 +287,7 @@
   display: none;
 }
 :global(.vtex-product-list-0-x-removeButton)::before {
-<<<<<<< HEAD
-  content: url(/arquivos/delete-item-icon.png);
-=======
   content: url(assets/cool-delete-icon.svg);
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }
 :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
   color: #252525;
@@ -504,11 +500,8 @@
     max-width: 100%;
     position: fixed;
     width: 100%;
-<<<<<<< HEAD
     height: auto;
-=======
     height: 100%;
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     left: 0;
     margin-top: 5px;
   }
@@ -538,26 +531,16 @@
 
 :global(.vtex-menu-2-x-styledLinkContent--itemsubcat) {
   color: black;
-<<<<<<< HEAD
   font-size: 14px;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
   font-family: "CenturyGothic" !important;
-=======
-  font-size: 12px;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }
 
 :global(.vtex-menu-2-x-styledLinkContainer--itemsubcat) {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-<<<<<<< HEAD
   font-family: "CenturyGothic" !important;
-=======
-  font-family: "CenturyGothic";
->>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }
 
 :global(.vtex-menu-2-x-menuContainerNav) {
