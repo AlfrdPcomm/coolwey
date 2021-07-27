@@ -107,13 +107,13 @@
   line-height: 20px;
 }
 :global(.vtex-product-price-1-x-savings--summary) {
-  background-color: #fff;
-  color: #c80f0f;
-}
-:global(.vtex-product-price-1-x-savings--summary) {
+  /*background-color: #fff;*/
   font-size: 0;
   padding-left: 63px;
+  color: #c80f0f !important;
 }
+
+
 :global(.vtex-product-price-1-x-savingsValue--summary) {
   color: #c80f0f;
   font-family: CenturyGothicBold;
