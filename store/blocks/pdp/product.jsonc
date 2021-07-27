@@ -12,6 +12,7 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
+<<<<<<< HEAD
       //"flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
@@ -29,12 +30,24 @@
       "blockClass":"margen"
     }
   },
+=======
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "flex-layout.row#tituloshelf-producto",
+      "flex-layout.row#shelf-producto",
+      "product-questions-and-answers"
+    ]
+  },
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 
   "responsive-layout.tablet#pdp":{
     "children":[
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main-tablet",
       "flex-layout.row#description",
+<<<<<<< HEAD
       //"flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
@@ -43,6 +56,15 @@
       "flex-layout.row#shelf-producto",
       "product-questions-and-answers",
       "back-to-top-button"
+=======
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "flex-layout.row#tituloshelf-producto",
+      "flex-layout.row#shelf-producto",
+      "product-questions-and-answers"
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     ]
   },
 
@@ -51,6 +73,7 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main-phone",
       "flex-layout.row#description",
+<<<<<<< HEAD
       //"flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
@@ -59,15 +82,28 @@
       "flex-layout.row#shelf-producto",
       "product-questions-and-answers",
       "back-to-top-button"
+=======
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "flex-layout.row#tituloshelf-producto",
+      "flex-layout.row#shelf-producto",
+      "product-questions-and-answers"
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     ]
   },
 
   "flex-layout.row#specifications-title": {
     "children": [
       "rich-text#specifications"
+<<<<<<< HEAD
     ],"props":{
       "blockClass":"margen"
     }
+=======
+    ]
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
   },
   "rich-text#specifications": {
     "props": {
@@ -76,15 +112,23 @@
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
+<<<<<<< HEAD
       "marginTop": 4,
       "blockClass": "margen"
+=======
+      "marginTop": 4
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     },
     "children": ["breadcrumb"]
   },
   "flex-layout.row#description": {
     "props": {
+<<<<<<< HEAD
       "marginBottom": 7,
       "blockClass":"margen"
+=======
+      "marginBottom": 7
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     },
     "children": ["product-description"]
   },
@@ -95,8 +139,12 @@
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
+<<<<<<< HEAD
       "paddingBottom": 7,
       "blockClass":"margen"
+=======
+      "paddingBottom": 7
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     },
     "children": [
       "flex-layout.col#stack", 
@@ -179,8 +227,13 @@
         "desktop": "auto",
         "phone": "16:9"
       },
+<<<<<<< HEAD
       "displayThumbnailsArrows": true,
       "showPaginationDots": true,
+=======
+      "displayThumbnailsArrows": false,
+      "showPaginationDots": false,
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
       "showNavigationArrows":false,
       "thumbnailsOrientation": "horizontal",
       "position": "center"
@@ -268,7 +321,11 @@
     }
   },
   "flex-layout.col#buy-button": {
+<<<<<<< HEAD
     "children": ["add-to-cart-button#producto"],
+=======
+    "children": ["add-to-cart-button"],
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     "props": {
       "width": "50%",
       "blockClass": "col-buyButton"
@@ -282,7 +339,11 @@
     }
   },
   "flex-layout.col#buy-button-tablet": {
+<<<<<<< HEAD
     "children": ["add-to-cart-button#producto"],
+=======
+    "children": ["add-to-cart-button"],
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     "props": {
       "width": "50%",
       "blockClass": "col-buyButton"
@@ -314,7 +375,11 @@
       "marginTop": 4,
       "marginBottom": 7
     },
+<<<<<<< HEAD
     "children": ["add-to-cart-button#producto"]
+=======
+    "children": ["add-to-cart-button"]
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
   },
 
   "share#default": {
@@ -335,7 +400,11 @@
     "children":[
       "flex-layout.col#titshelf-producto"
     ],"props":{
+<<<<<<< HEAD
       "blockClass":["contenedortitulo","margen"],
+=======
+      "blockClass":"contenedortitulo",
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
       "horizontalAlign":"center"
     }
   },
@@ -359,10 +428,14 @@
 
   // --------------------------- inicio shelf Producots ------------------------------
   "flex-layout.row#shelf-producto": {
+<<<<<<< HEAD
     "children": ["list-context.product-list#demo1-producto"],
     "props":{
       "blockClass":"margen"
     }
+=======
+    "children": ["list-context.product-list#demo1-producto"]
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
   },
   "list-context.product-list#demo1-producto": {
     "blocks": ["product-summary.shelf"],
@@ -376,6 +449,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
+<<<<<<< HEAD
         "phone": 2
       },
       "infinite": true,
@@ -398,4 +472,15 @@
       "onClickBehavior":"add-to-cart"
     }
   }
+=======
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+  // --------------------------- fin shelf Producots ------------------------------
+
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
 }

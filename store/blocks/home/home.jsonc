@@ -16,8 +16,12 @@
       "flex-layout.row#shelfnp2", // Shelf nuevos producots 2
       "flex-layout.row#infocardesc", //Infocard descuentos
       "flex-layout.row#deals", //Solo se modifican imagenes y textos en el archivo deals
+<<<<<<< HEAD
       "flex-layout.row#news", // Apartado newsletter
       "back-to-top-button"
+=======
+      "flex-layout.row#news" // Apartado newsletter
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     ]
   },
 
@@ -369,6 +373,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
+<<<<<<< HEAD
         "phone": 2
       },
       "infinite": true,
@@ -376,6 +381,13 @@
       "blockClass": "shelf",
       "showNavigationArrows":"desktopOnly",
       "showPaginationDots":"mobileOnly"
+=======
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     }
   },
 
@@ -515,6 +527,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
+<<<<<<< HEAD
         "phone": 2
       },
       "infinite": true,
@@ -522,6 +535,13 @@
       "blockClass": "shelf",
       "showNavigationArrows":"desktopOnly",
       "showPaginationDots":"mobileOnly"
+=======
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     }
   },
 
@@ -597,7 +617,11 @@
   "newsletter":{
     "props":{
       "label":"",
+<<<<<<< HEAD
       "placeholder": "E-mail"
+=======
+      "placeholder": " "
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     }
   },
   // --------------------------- Fin Newsletter ---------------------------------------------
@@ -617,6 +641,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
+<<<<<<< HEAD
         "phone": 2
       },
       "infinite": true,
@@ -629,6 +654,13 @@
   "back-to-top-button":{
     "props":{
       "display":"caret-icon"
+=======
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     }
   }
 }

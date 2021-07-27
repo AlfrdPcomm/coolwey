@@ -87,7 +87,10 @@
   },"flex-layout.row#sm":{
     "title":"Row Social Media",
     "children":[
+<<<<<<< HEAD
       "flex-layout.col#image1",
+=======
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
       "flex-layout.col#image2",
       "flex-layout.col#image3"      
     ],"props":{

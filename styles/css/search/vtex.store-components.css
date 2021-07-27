@@ -64,6 +64,7 @@
 :global(.vtex-flex-layout-0-x-flexColChild--filterCol) {
   background-color: #f8f8f8;
   padding: 10px;
+<<<<<<< HEAD
   
 }
 
@@ -119,6 +120,15 @@
   :global(.vtex-search-result-3-x-filterBreadcrumbsText),
   :global(.vtex-search-result-3-x-galleryTitle--layout) {
     font-size: 20px !important;
+=======
+}
+
+@media (max-width: 1024px) {
+  :global(.vtex-search-result-3-x-filterBreadcrumbsItemName),
+  :global(.vtex-search-result-3-x-filterBreadcrumbsText),
+  :global(.vtex-search-result-3-x-galleryTitle--layout) {
+    font-size: 16px !important;
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
     font-family: "CenturyGothicBold" !important;
     color: #000000;
   }
@@ -161,6 +171,7 @@
     :global(.vtex-button__label) {
     color: #212165;
   }
+<<<<<<< HEAD
 /*---------------- PDP-------------------*/
 :global(.vtex-flex-layout-0-x-flexRow--margen),
 :global(.vtex-flex-layout-0-x-flexCol--col-product-info),
@@ -194,3 +205,8 @@
 :global(.vtex-stack-layout-0-x-stackItem){
   width: 100%;
 }
+=======
+}
+
+/*-------------------- Fin Personalización Searc-result --------------------*/
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada

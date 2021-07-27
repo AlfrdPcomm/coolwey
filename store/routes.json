@@ -19,8 +19,11 @@
   },
   "store.custom#devoluciones-y-garantias": {
     "path": "/devoluciones-y-garantias"
+<<<<<<< HEAD
   },
   "store.custom#quienes-somos": {
     "path": "/quienes-somos"
+=======
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
   }
 }

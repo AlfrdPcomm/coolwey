@@ -8,6 +8,11 @@
       "menu-item#deportesdesk",
       "menu-item#mujerdesk",
       "menu-item#hombredesk",
+<<<<<<< HEAD
+=======
+      "menu-item#fraganciasdesk",
+      "menu-item#cosmeticosdesk",
+>>>>>>> dc6346e59a4ef83eea0ae4f517a56c5cb504cada
       "menu-item#gadgetsdesk",
       "menu-item#nuevosdesk",
       "menu-item#saledesk"
