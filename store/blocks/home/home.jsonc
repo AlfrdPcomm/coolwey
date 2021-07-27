@@ -16,8 +16,7 @@
       "flex-layout.row#shelfnp2", // Shelf nuevos producots 2
       "flex-layout.row#infocardesc", //Infocard descuentos
       "flex-layout.row#deals", //Solo se modifican imagenes y textos en el archivo deals
-      "flex-layout.row#news", // Apartado newsletter
-      "back-to-top-button"
+      "flex-layout.row#news" // Apartado newsletter
     ]
   },
 
@@ -77,11 +76,12 @@
       "showNavigationArrows":"never",
       "blockClass":"contenidosldcats"
     },"children":[
+      "flex-layout.col#cat4",
       "flex-layout.col#cat1",
       "flex-layout.col#cat2",
-      "flex-layout.col#cat3",
-      "flex-layout.col#cat4",
-      "flex-layout.col#cat5"
+      "flex-layout.col#cat3"
+      //,
+      //"flex-layout.col#cat5"
     ]
   },"flex-layout.col#cat1":{
     "title": "Categoría 1",
@@ -97,7 +97,7 @@
     "title":"Imagen cat1",
     "props":{
       "height":218,
-      "src":"assets/teni.png",
+      "src":"assets/mujer.png",
       "link":{
         "url":"/"
       },
@@ -126,7 +126,7 @@
     "title":"Imagen cat2",
     "props":{
       "height":218,
-      "src":"assets/teni.png",
+      "src":"assets/hombre.png",
       "link":{
         "url":"/"
       },
@@ -155,7 +155,7 @@
     "title":"Imagen cat3",
     "props":{
       "height":218,
-      "src":"assets/teni.png",
+      "src":"assets/gadgets.png",
       "link":{
         "url":"/"
       },
@@ -182,7 +182,7 @@
     "title":"Imagen cat4",
     "props":{
       "height":218,
-      "src":"assets/teni.png",
+      "src":"assets/deportes.png",
       "link":{
         "url":"/"
       },
@@ -270,13 +270,24 @@
   },"flex-layout.col#infoizq":{
     "title":"Contenedor Izquierda",
     "children":[
-      "info-card#izquierda"
+      "image#infocardizq"
+      //"info-card#izquierda"
     ],"props":{
       "blockClass":"colinfo",
       "paddingLeft":5,
-      "paddingRight":5
+      "paddingRight":5,
+      "horizontalAlign":"center"
     }
   },
+  "image#infocardizq":{
+    "props":{
+      "src":"assets/bannerizq.png",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
   "info-card#izquierda":{
     "title":"Infocard Izquierda",
     "props":{
@@ -295,11 +306,21 @@
   "flex-layout.col#infoder":{
     "title":"Contenedor Derecha",
     "children":[
-      "info-card#derecha"
+      "image#infocarder"
+      //"info-card#derecha"
     ],"props":{
       "blockClass":"colinfo",
       "paddingLeft":5,
-      "paddingRight": 5
+      "paddingRight": 5,
+      "horizontalAlign":"center"
+    }
+  },
+  "image#infocarder":{
+    "props":{
+      "src":"assets/bannerder.png",
+      "link":{
+        "url":"/"
+      }
     }
   },
 
@@ -504,7 +525,7 @@
   },
 
   "list-context.product-list#shelfnp2": {
-    "blocks": ["product-summary"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelfnp2"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -531,8 +552,14 @@
 
   "flex-layout.row#infocardesc":{
     "children":[
-      "info-card#desc"
+      "image#bannerdesc"
+      //"info-card#desc"
     ]
+  },
+  "image#bannerdesc":{
+    "props":{
+      "src":"assets/bannerdesc.png"
+    }
   },
 
 
@@ -624,11 +651,6 @@
       "blockClass": "shelf",
       "showNavigationArrows":"desktopOnly",
       "showPaginationDots":"mobileOnly"
-    }
-  },
-  "back-to-top-button":{
-    "props":{
-      "display":"caret-icon"
     }
   }
 }

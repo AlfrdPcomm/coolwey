@@ -534,7 +534,7 @@
   font-size: 14px;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-  font-family: "CenturyGothic" !important;
+  font-family: "CenturyGothicRegular" !important;
 }
 
 :global(.vtex-menu-2-x-styledLinkContainer--itemsubcat) {
@@ -570,9 +570,7 @@
     font-size: 16px;
   }
 
-  :global(.vtex-menu-2-x-styledLinkContent--itemsubcat) {
-    font-family: "CenturyGothic" !important;
-  }
+  
 }
 
 :global(.vtex-menu-2-x-styledLinkContent--itemenprin)

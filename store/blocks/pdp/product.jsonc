@@ -18,8 +18,7 @@
       "flex-layout.row#reviews",      
       "flex-layout.row#tituloshelf-producto",
       "flex-layout.row#shelf-producto",
-      "product-questions-and-answers",
-      "back-to-top-button"
+      "product-questions-and-answers"
     ]
   },
   "flex-layout.row#reviews":{
@@ -42,8 +41,7 @@
       "flex-layout.row#reviews",
       "flex-layout.row#tituloshelf-producto",
       "flex-layout.row#shelf-producto",
-      "product-questions-and-answers",
-      "back-to-top-button"
+      "product-questions-and-answers"
 
     ]
   },
@@ -59,8 +57,7 @@
       "flex-layout.row#reviews",
       "flex-layout.row#tituloshelf-producto",
       "flex-layout.row#shelf-producto",
-      "product-questions-and-answers",
-      "back-to-top-button"
+      "product-questions-and-answers"
     ]
   },
 

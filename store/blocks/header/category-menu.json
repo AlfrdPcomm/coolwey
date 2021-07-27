@@ -117,7 +117,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Mujer",
+        "href": "/139?map=productClusterIds",
         "noFollow": false,
         "tagTitle": "MUJER",
         "text": "MUJER"
@@ -134,7 +134,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Hombre",
+        "href": "/140?map=productClusterIds",
         "noFollow": false,
         "tagTitle": "HOMBRE",
         "text": "HOMBRE"
@@ -444,7 +444,7 @@
         "href": "/Ropa-Deportiva",
         "noFollow": true,
         "tagTitle": "ROPA DEPORTIVA",
-        "text": "ROPA DEPEORTIVA"
+        "text": "ROPA DEPORTIVA"
       },
       "blockClass":"titcats"
     },
@@ -481,7 +481,7 @@
         "href": "/Ropa-Deportiva",
         "noFollow": true,
         "tagTitle": "CALZADO DEPORTIVO",
-        "text": "CALZADO DEPEORTIVO"
+        "text": "CALZADO DEPORTIVO"
       },"blockClass":"titcats"
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#calzadodep-mobile"]
