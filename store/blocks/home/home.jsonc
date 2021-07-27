@@ -49,7 +49,11 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel",
-      "fullWidth":true
+      "fullWidth":true,
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
     }
   },
 
