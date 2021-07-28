@@ -100,7 +100,7 @@
   },"image#cat1":{
     "title":"Imagen cat1",
     "props":{
-      "height":218,
+      "height":180,
       "src":"assets/mujer.png",
       "link":{
         "url":"/"
@@ -129,7 +129,7 @@
   },"image#cat2":{
     "title":"Imagen cat2",
     "props":{
-      "height":218,
+      "height":180,
       "src":"assets/hombre.png",
       "link":{
         "url":"/"
@@ -158,7 +158,7 @@
   },"image#cat3":{
     "title":"Imagen cat3",
     "props":{
-      "height":218,
+      "height":180,
       "src":"assets/gadgets.png",
       "link":{
         "url":"/"
@@ -185,7 +185,7 @@
   },"image#cat4":{
     "title":"Imagen cat4",
     "props":{
-      "height":218,
+      "height":180,
       "src":"assets/deportes.png",
       "link":{
         "url":"/"
@@ -216,7 +216,7 @@
   },"image#cat5":{
     "title":"Imagen cat5",
     "props":{
-      "height":218,
+      "height":180,
       "src":"assets/teni.png",
       "link":{
         "url":"/"

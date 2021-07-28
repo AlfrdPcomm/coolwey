@@ -125,7 +125,7 @@
   },
   "add-to-cart-button":{
     "props":{
-      "text": "VER PRODCUTO",
+      "text": "VER PRODUCTO",
       "onClickBehavior":"go-to-product-page"
     }
   }

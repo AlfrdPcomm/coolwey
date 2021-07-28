@@ -8,9 +8,9 @@
       "menu-item#deportesdesk",
       "menu-item#mujerdesk",
       "menu-item#hombredesk",
-      "menu-item#gadgetsdesk",
+      "menu-item#gadgetdesk", 
       "menu-item#nuevosdesk",
-      "menu-item#saledesk"
+      "menu-item#salesdesk"
     ]
   },
   "menu-item#category-apparel": {
@@ -593,5 +593,201 @@
         "text": "Contact Us"
       }
     }
+  },
+
+  "menu-item#gadgetdesk": {
+    "props": {
+      "id": "menu-item-gadgetdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "GADGETS",
+        "text": "GADGETS"
+      },
+      "blockClass":"itemenprin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#gadgetdesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#gadgetdesk": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-gadgetdesk"
+    ]
+  },
+  "flex-layout.row#menu-gadgetdesk": {
+    "children": [
+      "flex-layout.col#catmen31"
+    ]
+  },
+  "flex-layout.col#catmen31": {
+    "children": [
+      "menu-item#titcat31",
+      "menu-item#itemcat31",
+      "menu-item#itemcat32"
+    ]
+  },
+  "menu-item#titcat31": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat31",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Gadgets",
+        "noFollow": true,
+        "tagTitle": "GADGETS",
+        "text":"GADGETS" 
+      }
+    }
+  },
+
+  "menu-item#itemcat31":{
+    "props":{
+      "type":"category",
+      "categoryId": 14,
+      "text":"Smartwatches",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+  "menu-item#itemcat32":{
+    "props":{
+      "type":"category",
+      "categoryId": 15,
+      "text":"Accesorios",
+      "blockClass":"itemsubcat"
+    }
+  },
+
+
+  "menu-item#salesdesk": {
+    "props": {
+      "id": "menu-item-salesdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "SALE",
+        "text": "SALE"
+      },
+      "blockClass":"itemenprin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#salesdesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#salesdesk": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-salesdesk"
+    ]
+  },
+  "flex-layout.row#menu-salesdesk": {
+    "children": [
+      "flex-layout.col#catmen41",
+      "flex-layout.col#catmen51"
+    ]
+  },
+  "flex-layout.col#catmen41": {
+    "children": [
+      "rich-text#newstextop"
+    ],"props":{
+      "verticalAlign":"middle",
+      "paddingLeft":5,
+      "paddingRight":5
+    }
+  },
+  "rich-text#newstextop":{
+    "props":{
+      "text":"Por el momento no contamos con artículos con descuento, regístrate y te informaremos de nuestras promociones y descuentos",
+      "blockClass":"textnewstop"
+    }
+  },
+
+  "flex-layout.col#catmen51":{
+    "children":[
+      "flex-layout.row#news"
+    ],"props":{
+      "verticalAlign":"middle",
+      "paddingLeft":5,
+      "paddingRight":5,
+      "blockClass":"newstopcontainer"
+    }
+  },
+
+
+  "menu-item#gadgets-mobile": {
+    "props": {
+      "id": "gadgetsmobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "GADGETS",
+        "text": "GADGETS"
+      },"blockClass":"itemenprin"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#gadgetsmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#gadgetsmob": {
+    "children": ["vtex.menu@2.x:menu#gadgetsmob"]
+  },
+
+  "vtex.menu@2.x:menu#gadgetsmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#itemcat31",
+      "menu-item#itemcat32"
+    ]
+  },
+
+
+  "menu-item#sales-mobile": {
+    "props": {
+      "id": "salesmobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "SALE",
+        "text": "SALE"
+      },"blockClass":"itemenprin"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#salemob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#salemob": {
+    "children": ["vtex.menu@2.x:menu#salemob"]
+  },
+
+  "vtex.menu@2.x:menu#salemob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#menu-salesdesk"
+    ]
   }
+
+ 
+
+
 }

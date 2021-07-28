@@ -174,7 +174,10 @@
     "children": ["menu#drawer"],
     "blocks":[
       "drawer-header#mobile"
-    ]
+    ],
+    "props":{
+      "isFullWidth":true
+    }
   },
   "drawer-header#mobile":{
     "children":[
@@ -251,9 +254,10 @@
       "menu-item#hombredesk",
       //"menu-item#fraganciasdesk",
       //"menu-item#cosmeticosdesk",
-      "menu-item#gadgetsdesk",
+      //"menu-item#gadgetsdesk",
+      "menu-item#gadgets-mobile",
       "menu-item#nuevosdesk",
-      "menu-item#saledesk"    
+      "menu-item#sales-mobile" 
     ],
     "props": {
       "orientation": "vertical"

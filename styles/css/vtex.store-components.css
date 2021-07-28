@@ -145,8 +145,8 @@
 }
 :global(.vtex-store-components-3-x-imageElement--imgcats) {
   border-radius: 50%;
-  width: 218px;
-  height: 218px;
+  width: 180px;
+  height: 180px !important;
 }
 
 .items-stretch {
@@ -1213,3 +1213,11 @@
 
 /*----------------- Menu página Institucional ------------------------*/
 
+:global(.vtex-rich-text-0-x-paragraph--textnewstop) {
+  margin-top: 0%;
+  font-family: 'CenturyGothicRegular';
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--newstopcontainer){
+  padding-top: 25px;
+}
