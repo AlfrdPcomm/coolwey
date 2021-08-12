@@ -5,6 +5,7 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",     
+      "flex-layout.row#mobile", //Categorias para la version mobile
       "flex-layout.row#sldcategorias", //Slider de categorias 
       "flex-layout.row#tituloshelf", // Titulo nuevos productos
       "flex-layout.row#shelf",
@@ -79,8 +80,7 @@
       "flex-layout.col#cat1",
       "flex-layout.col#cat2",
       "flex-layout.col#cat3",
-      "flex-layout.col#cat4",
-      "flex-layout.col#cat5"
+      "flex-layout.col#cat4"
     ]
   },"flex-layout.col#cat1":{
     "title": "Categoría 1",
@@ -196,7 +196,42 @@
     }
   },
   
-  
+  "flex-layout.row#mobile":{
+    "children":[
+      "flex-layout.col#mobile"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileRow",
+      "marginTop": 2
+    }
+  },
+  "flex-layout.col#mobile":{
+    "children":[
+      "flex-layout.row#dosArriba",
+      "flex-layout.row#dosAbajo"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileCol"
+    }
+  },
+  "flex-layout.row#dosArriba":{
+    "children":[
+      "flex-layout.col#cat1",
+      "flex-layout.col#cat2"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#dosAbajo": {
+    "children":[
+      "flex-layout.col#cat3",
+      "flex-layout.col#cat4"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  },
   
   "flex-layout.col#cat5":{
     "title": "Categoría 5",
