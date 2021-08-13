@@ -642,7 +642,8 @@
     "children":[
       "rich-text#titnews",
       "rich-text#textnews",
-      "newsletter"
+      "newsletter",
+      "rich-text#trestricciones"
     ],
     "props":{
       "horizontalAlign":"center"
@@ -667,6 +668,14 @@
     "props":{
       "label":"",
       "placeholder": "E-mail"
+    }
+  },
+
+  "rich-text#trestricciones":{
+    "title":"Texto Newsletter Restricciones",
+    "props":{
+      "text":"Aplica solo para suscriptores por primera vez, los suscriptores que se reinscriban solo les aplicara para recibir correos electrónicos de marketing y promociones. Promoción valida solo para ropa y calzado deportivo, no aplica con artículos con descuento.",
+      "blockClass":"textnewsRestrictions"
     }
   },
   // --------------------------- Fin Newsletter ---------------------------------------------

@@ -353,6 +353,12 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+:global(.vtex-flex-layout-0-x-flexRow--newsLetter)
+:global(.vtex-rich-text-0-x-paragraph--textnewsRestrictions) {
+  font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 :global(.vtex-flex-layout-0-x-flexRowContent--newsLetter)
   :global(.vtex-input-prefix__group) {
   height: 40px;
