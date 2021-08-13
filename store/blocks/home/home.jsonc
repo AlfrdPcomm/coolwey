@@ -207,14 +207,14 @@
   },
   "flex-layout.col#mobile":{
     "children":[
-      "flex-layout.row#dosArriba",
-      "flex-layout.row#dosAbajo"
+      "flex-layout.row#DepGat",
+      "flex-layout.row#MujHom"
     ],
     "props":{
       "blockClass":"categoriesMobileCol"
     }
   },
-  "flex-layout.row#dosArriba":{
+  "flex-layout.row#MujHom":{
     "children":[
       "flex-layout.col#cat1",
       "flex-layout.col#cat2"
@@ -223,10 +223,10 @@
       "preserveLayoutOnMobile":true
     }
   },
-  "flex-layout.row#dosAbajo": {
+  "flex-layout.row#DepGat": {
     "children":[
-      "flex-layout.col#cat3",
-      "flex-layout.col#cat4"
+      "flex-layout.col#cat4",
+      "flex-layout.col#cat3"
     ],
     "props": {
       "preserveLayoutOnMobile":true
