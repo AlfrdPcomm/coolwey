@@ -5,6 +5,7 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",     
+      "flex-layout.row#mobile", //Categorias para la version mobile
       "flex-layout.row#sldcategorias", //Slider de categorias 
       "flex-layout.row#tituloshelf", // Titulo nuevos productos
       "flex-layout.row#shelf",
@@ -229,6 +230,43 @@
       "text":"COSMÉTICOS",
       "textAlignment":"center",
       "textPosition":"center"
+    }
+  },
+
+  "flex-layout.row#mobile":{
+    "children":[
+      "flex-layout.col#mobile"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileRow",
+      "marginTop": 2
+    }
+  },
+  "flex-layout.col#mobile":{
+    "children":[
+      "flex-layout.row#DepGat",
+      "flex-layout.row#MujHom"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileCol"
+    }
+  },
+  "flex-layout.row#MujHom":{
+    "children":[
+      "flex-layout.col#cat1",
+      "flex-layout.col#cat2"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#DepGat": {
+    "children":[
+      "flex-layout.col#cat4",
+      "flex-layout.col#cat3"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
     }
   },
 
