@@ -71,11 +71,11 @@
     }
   },"slider-layout#slidercategorias":{
     "title":"Contenido Slider Cats",
-    "props":{
+    "props":{ 
       "itemsPerPage":{
         "desktop": 5,
         "tablet": 3,
-        "phone":2
+        "phone": 4
       },
       "infinite":true,
       "showNavigationArrows":"never",
@@ -202,7 +202,42 @@
     }
   },
   
-  
+/*   "flex-layout.row#mobile":{
+    "children":[
+      "flex-layout.col#mobile"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileRow",
+      "marginTop": 2
+    }
+  }, */
+/*   "flex-layout.col#mobile":{
+    "children":[
+      "flex-layout.row#DepGat",
+      "flex-layout.row#MujHom"
+    ],
+    "props":{
+      "blockClass":"categoriesMobileCol"
+    }
+  }, */
+/*   "flex-layout.row#MujHom":{
+    "children":[
+      "flex-layout.col#cat1",
+      "flex-layout.col#cat2"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  }, */
+/*   "flex-layout.row#DepGat": {
+    "children":[
+      "flex-layout.col#cat4",
+      "flex-layout.col#cat3"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  }, */
   
   "flex-layout.col#cat5":{
     "title": "Categoría 5",
@@ -670,6 +705,14 @@
       "placeholder": "E-mail"
     }
   },
+
+/*   "rich-text#trestricciones":{
+    "title":"Texto Newsletter Restricciones",
+    "props":{
+      "text":"Aplica solo para suscriptores por primera vez, los suscriptores que se reinscriban solo les aplicara para recibir correos electrónicos de marketing y promociones. Promoción valida solo para ropa y calzado deportivo, no aplica con artículos con descuento.",
+      "blockClass":"textnewsRestrictions"
+    }
+  }, */
 
   "rich-text#trestricciones":{
     "title":"Texto Newsletter Restricciones",
