@@ -1,0 +1,98 @@
+{
+    "store.custom#contacto": {
+      "children": [
+        "flex-layout.row#contact-title",
+        "flex-layout.row#contacto"
+      ]
+    },
+    "flex-layout.row#contact-title":{
+      "children":[
+        "rich-text#title"
+      ]
+    },
+    "rich-text#title":{
+      "props":{
+        "text": "**Contacto**",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "font": "t-heading-5",
+        "blockClass": "titleText"
+      }
+    },
+    "flex-layout.row#contacto":{
+      "props":{
+        "blockClass": "contactCont"
+      },
+      "children":[
+        "flex-layout.col#izq",
+        "flex-layout.col#der"
+      ]
+    },
+    "flex-layout.col#izq":{
+      "children":[
+        "rich-text#info"
+      ]
+    },
+  
+    "rich-text#info":{
+      "props":{
+        "text": "**Título** \n ### Texto"
+      }
+    },
+    "flex-layout.col#der":{
+      "children":[
+        "form#contacto"
+      ]
+    },
+  
+    "form#contacto": {
+      "props": {
+        "entity": "contacto",
+        "schema": "mdv1"
+      },
+      "children": [
+        "form-input.text#nombre",
+        "form-input.text#correo",
+        "form-input.textarea",
+        "form-submit#contacto"
+      ],
+      "blocks": ["form-success#contacto"]
+    },
+    "form-success#contacto": {
+      "children": [
+        "rich-text#successSubmit-contacto"
+      ]
+    },
+    "rich-text#successSubmit-contacto": {
+      "props": {
+        "text": "Mensaje enviado correctamente!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#nombre": {
+      "props": {
+        "pointer": "#/properties/nombre",
+        "label": "Nombre"
+      }
+    },
+    "form-input.text#correo": {
+      "props": {
+        "pointer": "#/properties/email",
+        "label": "Email"
+      }
+    },
+    "form-input.textarea": {
+      "props": {
+        "pointer": "#/properties/mensaje",
+        "label": "Escribe tu mensaje"
+      }
+    },
+    "form-submit#contacto": {
+      "props": {
+        "label": "Enviar"
+      }
+    }
+  }
+   
+
