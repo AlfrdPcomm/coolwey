@@ -387,6 +387,20 @@
       "showPaginationDots":"mobileOnly"
     }
   },
+  "shelf.relatedProducts":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{            
+      "recommendation":"recommendation",
+      "productList":{
+        "showTitle":false,
+        "itemsPerPage":5,
+        "arrows":false,
+        "minItemsPerPage":1      
+      }
+    }
+  },
   // --------------------------- fin shelf Producots ------------------------------
 
   "product-specification-group#table":{
