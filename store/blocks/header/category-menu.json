@@ -370,7 +370,8 @@
   "flex-layout.col#catmen2": {
     "children": [
       "menu-item#titcat2",
-      "menu-item#itemcat21"
+      "menu-item#itemcat21",
+      "menu-item#itemcat22"
     ],"props":{
       "preventVerticalStretch":true
     }
@@ -402,6 +403,14 @@
     }
   },
 
+  "menu-item#itemcat22":{
+    "props":{
+      "type":"category",
+      "categoryId": 16,
+      "text":"Sneakers",
+      "blockClass":"itemsubcat"
+    }   
+  },
 
   "menu-item#deportes-mobile": {
     "props": {
@@ -495,7 +504,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#itemcat21"
+      "menu-item#itemcat21",
+      "menu-item#itemcat22"  
     ]
   },
 
