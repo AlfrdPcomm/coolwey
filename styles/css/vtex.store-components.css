@@ -1273,3 +1273,10 @@
   color: #03044e;
   font-size: 20px
 }
+
+/* Productos relacionados */
+
+:global(.vtex-shelf-1-x-relatedProducts--relatedCar) :global(.vtex-product-summary-2-x-container){
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}

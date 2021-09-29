@@ -397,8 +397,9 @@
         "showTitle":false,
         "itemsPerPage":5,
         "arrows":false,
-        "minItemsPerPage":1      
-      }
+        "minItemsPerPage":1     
+      },
+      "blockClass":"relatedCar"
     }
   },
   // --------------------------- fin shelf Producots ------------------------------
