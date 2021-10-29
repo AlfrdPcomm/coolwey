@@ -539,6 +539,15 @@
 :global(.vtex-store-components-3-x-skuSelectorName) {
   font-size: 0;
 }
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) 
+:global(.vtex-store-components-3-x-skuSelectorName)::before{
+  content: "Elige tu color";
+  color: #252525;
+  font-family: CenturyGothicRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
 :global(.vtex-store-components-3-x-skuSelectorName)::before {
   content: "Elige tu talla";
   color: #252525;
@@ -551,6 +560,14 @@
   border: 0;
 }
 
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--color)
+:global(.vtex-store-components-3-x-skuSelectorItem){
+  box-sizing: border-box;
+  height: 32px;
+  width: 64px;
+  border: 1px solid #212165;
+  border-radius: 3px;
+}
 :global(.vtex-store-components-3-x-skuSelectorItem) {
   box-sizing: border-box;
   height: 32px;
