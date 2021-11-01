@@ -594,3 +594,7 @@
   width: 14px;
   background-color: #c80f0f;
 }
+
+:global(.vtex-mega-menu-0-x-menuContainerNav){
+  z-index: 4;
+}

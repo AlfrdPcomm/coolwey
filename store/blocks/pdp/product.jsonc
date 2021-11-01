@@ -307,7 +307,7 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": true      
     }
   },
 
@@ -398,6 +398,20 @@
     "props":{
       "text":"AGREGAR AL CARRITO",
       "onClickBehavior":"add-to-cart"
+    }
+  },
+  "shelf.relatedProducts":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{            
+      "recommendation":"recommendation",
+      "productList":{
+        "showTitle":false,
+        "itemsPerPage":5,
+        "arrows":false,
+        "minItemsPerPage":1      
+      }
     }
   }
 }

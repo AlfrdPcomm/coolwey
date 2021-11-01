@@ -498,13 +498,15 @@
   font-size: 0;
 }
 :global(.vtex-store-components-3-x-skuSelectorName)::before {
-  content: "Elige tu talla";
+  
   color: #252525;
   font-family: CenturyGothicRegular;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
 }
+
+
 :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
   border: 0;
 }
@@ -1220,4 +1222,29 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--newstopcontainer){
   padding-top: 25px;
+}
+
+
+/*-------------------- Inicio estilo mega-menu------------*/
+:global(.vtex-mega-menu-0-x-triggerButtonIcon){
+  color: #fff;
+  position:relative;
+  right: 5px;
+  top:2px
+}
+
+:global(.vtex-mega-menu-0-x-triggerContainer)::after{
+  content: "CATEGORÍAS";
+  font-size: 16px;
+  font-family: "CenturyGothicBold";
+  color: #fff;
+}
+
+:global(.vtex-mega-menu-0-x-menuContainerNav){
+  margin-left: 10%;
+  margin-top: 35px;
+}
+
+:global(.vtex-mega-menu-0-x-menuContainer){
+  min-width: 282px;
 }
