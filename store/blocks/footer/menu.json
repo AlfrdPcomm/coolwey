@@ -272,27 +272,15 @@
 
   "menu-item#sale-mobile": {
     "props": {
+      "type":"custom",
       "itemProps": {
         "tagTitle": "Sale",
-        "text": "Sale"
+        "text": "Sale",
+        "href":"/142?map=productClusterIds"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+    }
   },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
+  
 
   "menu-item#formas": {
     "props": {

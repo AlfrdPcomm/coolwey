@@ -307,7 +307,8 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true      
+      "showValueNameForImageVariation": true,
+      "imageHeight": 56  
     }
   },
 
@@ -385,6 +386,21 @@
       "blockClass": "shelf",
       "showNavigationArrows":"desktopOnly",
       "showPaginationDots":"mobileOnly"
+    }
+  },
+  "shelf.relatedProducts":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{            
+      "recommendation":"recommendation",
+      "productList":{
+        "showTitle":false,
+        "itemsPerPage":5,
+        "arrows":false,
+        "minItemsPerPage":1     
+      },
+      "blockClass":"relatedCar"
     }
   },
   // --------------------------- fin shelf Producots ------------------------------

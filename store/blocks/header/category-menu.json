@@ -223,7 +223,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Sale",
+        "href": "/142?map=productClusterIds",
         "noFollow": false,
         "tagTitle": "SALE",
         "text": "SALE"
@@ -374,7 +374,8 @@
   "flex-layout.col#catmen2": {
     "children": [
       "menu-item#titcat2",
-      "menu-item#itemcat21"
+      "menu-item#itemcat21",
+      "menu-item#itemcat22"
     ],"props":{
       "preventVerticalStretch":true
     }
@@ -401,11 +402,23 @@
     "props":{
       "type":"category",
       "categoryId": 12,
-      "text":"Tenis",
+      "text":"Deportivo",
       "blockClass":"itemsubcat"
     }
   },
 
+  "menu-item#itemcat22":{
+    "props":{
+      "type":"custom",
+      "itemProps":{
+        "text":"Sneakers",
+        "tagTitle":"Sneakers",
+        "href":"/Deportes/Calzado/Sneakers"
+      },
+      "text":"Sneakers",
+      "blockClass":"itemsubcat"
+    }   
+  },
 
   "menu-item#deportes-mobile": {
     "props": {
@@ -499,7 +512,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#itemcat21"
+      "menu-item#itemcat21",
+      "menu-item#itemcat22"  
     ]
   },
 
@@ -683,13 +697,11 @@
         "type": "internal",
         "noFollow": true,
         "tagTitle": "SALE",
-        "text": "SALE"
+        "text": "SALE",
+        "href":"/142?map=productClusterIds"
       },
       "blockClass":"itemenprin"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#salesdesk"
-    ]
+    }
   },
   "vtex.menu@2.x:submenu#salesdesk": {
     "props": {
@@ -779,7 +791,7 @@
     "blocks": ["vtex.menu@2.x:submenu.accordion#salemob"]
   },
   "vtex.menu@2.x:submenu.accordion#salemob": {
-    "children": ["vtex.menu@2.x:menu#salemob"]
+    "children": []
   },
 
   "vtex.menu@2.x:menu#salemob": {
