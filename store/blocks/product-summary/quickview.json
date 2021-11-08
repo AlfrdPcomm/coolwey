@@ -1,11 +1,19 @@
 {
   "modal-trigger#quickview": {
     "children": [
-      "icon-expand",
+      "rich-text#modal",
       "modal-layout#quickview"
     ],
     "props": {
       "blockClass": "quickview"
+    }
+  },
+
+  "rich-text#modal":{
+    "props":{
+      "text":"Ver Más",
+      "blockClass":"txtmas",
+      "textPosition":"center"
     }
   },
 
@@ -37,8 +45,7 @@
   "flex-layout.col#quickviewPrice": {
     "children": [
       "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
-      "product-installments"
+      "flex-layout.row#selling-price"
     ]
   },
   "modal-actions#quickview": {
@@ -84,7 +91,7 @@
 
   "flex-layout.row#quickview-actions-2": {
     "children": [
-      "link.product#button-pdp"
+      "add-to-cart-button#producto"
     ]
   },
   "link.product#button-pdp": {
@@ -124,7 +131,7 @@
   "product-summary-sku-selector#quickview": {
     "props": {
       "thumbnailImage": "skuvariation",
-      "imageHeight": 28,
+      "imageHeight": 45,
       "blockClass": "quickview",
       "visibility": "more-than-one"
     }

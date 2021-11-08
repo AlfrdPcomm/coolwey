@@ -212,8 +212,100 @@
         "text": "NUEVOS PRODUCTOS"
       },
       "blockClass":"itemenprin"
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#belleza"
+    ]
+  },"vtex.menu@2.x:submenu#belleza":{
+    "props":{
+      "width":"100%"
+    },
+    "children":[
+      "flex-layout.row#rowbelleza"
+    ]
+  },"flex-layout.row#rowbelleza":{
+    "children":[
+      "flex-layout.col#colbelleza"      
+    ]
+  },"flex-layout.col#colbelleza":{
+    "children":[
+      "vtex.menu@2.x:menu#belleza"
+    ]
+  },"vtex.menu@2.x:menu#belleza":{
+    "children":[
+      "menu-item#titbell",
+      "menu-item#fragm",
+      "menu-item#fragh",
+      "menu-item#cosme"
+    ],"props":{
+      "orientation":"vertical"
     }
   },
+  "menu-item#titbell": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titbell ",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Belleza",
+        "noFollow": true,
+        "tagTitle": "BELLEZA",
+        "text":"BELLEZA" 
+      }
+    }
+  },
+  "menu-item#fragm": {
+    "props": {
+      "id": "menu-item-fragm",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Belleza/Fragancias/Mujer",
+        "noFollow": false,
+        "tagTitle": "Fragancia para Dama",
+        "text": "Fragancia para Dama"
+      },
+      "blockClass":"itemsubcat"
+    }
+  },
+  "menu-item#cosme": {
+    "props": {
+      "id": "menu-item-cosme",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Belleza/Cosméticos",
+        "noFollow": false,
+        "tagTitle": "Cosméticos",
+        "text": "Cosméticos"
+      },
+      "blockClass":"itemsubcat"
+    }
+  },
+  "menu-item#fragh": {
+    "props": {
+      "id": "menu-item-fragh",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Belleza/Fragancias/Hombre",
+        "noFollow": false,
+        "tagTitle": "Fragancia para Caballero",
+        "text": "Fragancia para Caballero"
+      },
+      "blockClass":"itemsubcat"
+    }
+  },
+
 
   "menu-item#saledesk": {
     "props": {
@@ -800,6 +892,37 @@
     },
     "children": [
       "flex-layout.row#menu-salesdesk"
+    ]
+  },
+
+  "menu-item#belleza-mobile": {
+    "props": {
+      "id": "bellezamobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "BELLEZA",
+        "text": "BELLEZA"
+      },"blockClass":"itemenprin"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#bellezamob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#bellezamob": {
+    "children": ["vtex.menu@2.x:menu#bellmob"]
+  },
+
+  "vtex.menu@2.x:menu#bellmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#fragm",
+      "menu-item#fragh",
+      "menu-item#cosme"
     ]
   }
 

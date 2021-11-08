@@ -84,9 +84,8 @@
       "flex-layout.col#cat4",
       "flex-layout.col#cat1",
       "flex-layout.col#cat2",
-      "flex-layout.col#cat3"
-      //,
-      //"flex-layout.col#cat5"
+      "flex-layout.col#cat3",
+      "flex-layout.col#cat5"
     ]
   },"flex-layout.col#cat1":{
     "title": "Categoría 1",
@@ -262,7 +261,7 @@
   },"rich-text#cat5":{
     "title":"Texto cat 5",
     "props":{
-      "text":"COSMÉTICOS",
+      "text":"BELLEZA",
       "textAlignment":"center",
       "textPosition":"center"
     }
@@ -280,7 +279,8 @@
   "flex-layout.col#mobile":{
     "children":[
       "flex-layout.row#DepGat",
-      "flex-layout.row#MujHom"
+      "flex-layout.row#MujHom",
+      "flex-layout.row#DepBell"
     ],
     "props":{
       "blockClass":"categoriesMobileCol"
@@ -299,6 +299,13 @@
     "children":[
       "flex-layout.col#cat4",
       "flex-layout.col#cat3"
+    ],
+    "props": {
+      "preserveLayoutOnMobile":true
+    }
+  },"flex-layout.row#DepBell": {
+    "children":[
+      "flex-layout.col#cat5"
     ],
     "props": {
       "preserveLayoutOnMobile":true

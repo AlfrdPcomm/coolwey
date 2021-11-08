@@ -28,11 +28,11 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "add-to-list-btn"
-      
-
-      // "modal-trigger#quickview" // Check quickview.jsonc
-    ]
+      "add-to-list-btn",
+      "modal-trigger#quickview" // Check quickview.jsonc     
+    ],"props":{
+      "blockClass":"stacksum"
+    }
   },
 
   "product-summary-image#shelf": {

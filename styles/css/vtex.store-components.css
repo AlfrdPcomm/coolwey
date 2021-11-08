@@ -1280,7 +1280,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--newstopcontainer){
-  padding-top: 25px;
+  padding-top: 25px;  
 }
 
 
@@ -1303,3 +1303,34 @@
 }
 
 
+/*---------------- Modal  ----------------*/
+:global(.vtex-modal-layout-0-x-triggerContainer--quickview){
+  width: 100%;
+}
+
+:global(.vtex-rich-text-0-x-container--txtmas){
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtmas){
+  color: #212165;
+  font-family: CenturyGothicBold;
+}
+
+:global(.vtex-stack-layout-0-x-stackItem--stacksum--quickview){
+  bottom: 0 !important;
+  top: auto !important;
+}
+ :global(.vtex-stack-layout-0-x-stackItem--stacksum--quickview):hover{
+  bottom: 0 !important;
+  top: auto !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+:global(.vtex-modal-layout-0-x-triggerContainer--quickview){
+  padding: 0 !important;
+}
+
+:global(.vtex-store-components-3-x-productImageTag--quickview){
+  padding: 10px;
+}
