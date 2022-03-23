@@ -1334,3 +1334,8 @@
 :global(.vtex-store-components-3-x-productImageTag--quickview){
   padding: 10px;
 }
+
+:global(.vtex-menu-2-x-submenu)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  margin: 0 20px;
+}

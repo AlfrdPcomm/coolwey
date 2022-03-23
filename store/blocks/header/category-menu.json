@@ -354,9 +354,95 @@
   "flex-layout.row#menu-deportesdesk": {
     "children": [
       "flex-layout.col#catmen1",
-      "flex-layout.col#catmen2"
+      "flex-layout.col#catmen2",
+      "flex-layout.col#catmen3",
+      "flex-layout.col#catmen4"
     ]
   },
+  "flex-layout.col#catmen3": {
+    "children": [
+      "menu-item#titcat3",
+      "menu-item#itemcat20",
+      "menu-item#itemcat19"
+    ],"props":{
+      "preventVerticalStretch":true
+    }
+  },
+  "menu-item#titcat3": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/deportes/futbol",
+        "noFollow": true,
+        "tagTitle": "Futbol",
+        "text":"FUTBOL" 
+      }
+    }
+  },
+  "menu-item#itemcat19":{
+    "props":{
+      "type":"category",
+      "categoryId": 24,
+      "text":"Accesorios",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat20":{
+    "props":{
+      "type":"category",
+      "categoryId": 25,
+      "text":"Calzado",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+  "flex-layout.col#catmen4": {
+    "children": [
+      "menu-item#titcat4",
+      "menu-item#itemcat24",
+      "menu-item#itemcat23"
+    ],"props":{
+      "preventVerticalStretch":true
+    }
+  },
+  "menu-item#titcat4": {
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/deportes/padel",
+        "noFollow": true,
+        "tagTitle": "Padel",
+        "text":"PÁDEL" 
+      }
+    }
+  },
+  "menu-item#itemcat23":{
+    "props":{
+      "type":"category",
+      "categoryId": 26,
+      "text":"Accesorios",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat24":{
+    "props":{
+      "type":"category",
+      "categoryId": 27,
+      "text":"Calzado",
+      "blockClass": "itemsubcat"
+    }
+  },
+
   "flex-layout.col#catmen1": {
     "children": [
       "menu-item#titcat1",
@@ -501,12 +587,8 @@
 
   "menu-item#itemcat22":{
     "props":{
-      "type":"custom",
-      "itemProps":{
-        "text":"Sneakers",
-        "tagTitle":"Sneakers",
-        "href":"/Deportes/Calzado/Sneakers"
-      },
+      "type":"category",
+      "categoryId": 16,
       "text":"Sneakers",
       "blockClass":"itemsubcat"
     }   
@@ -538,10 +620,69 @@
     },
     "children": [
       "menu-item#ropadep-mobile",  
-      "menu-item#calzadodep-mobile"
+      "menu-item#calzadodep-mobile",
+      "menu-item#futbol-mobile",
+      "menu-item#padel-mobile"
+    ]
+  },  
+  "menu-item#futbol-mobile": {
+    "props": {
+      "id": "futbolmobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/deportes/futbol",
+        "noFollow": true,
+        "tagTitle": "FUTBOL",
+        "text": "FUTBOL"
+      },
+      "blockClass":"titcats"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#futbolmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#futbolmob": {
+    "children": ["vtex.menu@2.x:menu#futbolmob"]
+  },
+  "vtex.menu@2.x:menu#futbolmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#itemcat20",
+      "menu-item#itemcat19"
     ]
   },
-
+  "menu-item#padel-mobile": {
+    "props": {
+      "id": "padelmobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/deportes/padel",
+        "noFollow": true,
+        "tagTitle": "PÁDEL",
+        "text": "PÁDEL"
+      },
+      "blockClass":"titcats"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#padelmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#padelmob": {
+    "children": ["vtex.menu@2.x:menu#padelmob"]
+  },
+  "vtex.menu@2.x:menu#padelmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#itemcat24",
+      "menu-item#itemcat23"
+    ]
+  },
   "menu-item#ropadep-mobile": {
     "props": {
       "id": "ropadepmobile",
@@ -869,7 +1010,7 @@
 
   "menu-item#sales-mobile": {
     "props": {
-      "id": "salesmobile",
+      "id": "menu-item-salesmob",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -877,23 +1018,13 @@
         "type": "internal",
         "noFollow": true,
         "tagTitle": "SALE",
-        "text": "SALE"
-      },"blockClass":"itemenprin"
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#salemob"]
-  },
-  "vtex.menu@2.x:submenu.accordion#salemob": {
-    "children": []
+        "text": "SALE",
+        "href":"/142?map=productClusterIds"
+      },
+      "blockClass":"itemenprin"
+    }
   },
 
-  "vtex.menu@2.x:menu#salemob": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "flex-layout.row#menu-salesdesk"
-    ]
-  },
 
   "menu-item#belleza-mobile": {
     "props": {
